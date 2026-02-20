@@ -13,33 +13,33 @@
 
 | Игрок | Персонаж | Раса | Класс | Лист персонажа |
 |---|---|---|---|---|
-| Константин | Гракх | Орк | Монах | [PDF](/paella-valeciana/players/grakh--sheet.pdf ':ignore'), [Предыстория](/paella-valeciana/players/grakh--backstory.pdf ':ignore'), [Арт](/paella-valeciana/players/grakh--art.png ':ignore') |
-| Андрей | Аль-Сайид | Человек | Воин | [PDF](/paella-valeciana/players/al-sayid--sheet.pdf ':ignore'), [Предыстория](/paella-valeciana/players/al-sayid--backstory.pdf ':ignore'), [Арт](/paella-valeciana/players/al-sayid--art.jpeg ':ignore') |
-| Александр | Alfir Ga-Nor | Аасимар | Бард | [PDF](/paella-valeciana/players/alfir-ga-nor--sheet.pdf ':ignore') |
-| Mias | Morrigan | Аасимар | Жрец | [PDF](/paella-valeciana/players/morrigan--sheet.pdf ':ignore') |
-| Андрей К. | Уэлби Оливка | Полурослик | Плут | [PDF](/paella-valeciana/players/uelbi-olivka--sheet.pdf ':ignore') |
+| Константин | Гракх | Орк | Монах | [PDF](paella-valeciana/players/grakh--sheet.pdf ':ignore'), [Предыстория](paella-valeciana/players/grakh--backstory.pdf ':ignore'), [Арт](paella-valeciana/players/grakh--art.png ':ignore') |
+| Андрей | Аль-Сайид | Человек | Воин | [PDF](paella-valeciana/players/al-sayid--sheet.pdf ':ignore'), [Предыстория](paella-valeciana/players/al-sayid--backstory.pdf ':ignore'), [Арт](paella-valeciana/players/al-sayid--art.jpeg ':ignore') |
+| Александр | Alfir Ga-Nor | Аасимар | Бард | [PDF](paella-valeciana/players/alfir-ga-nor--sheet.pdf ':ignore') |
+| Mias | Morrigan | Аасимар | Жрец | [PDF](paella-valeciana/players/morrigan--sheet.pdf ':ignore') |
+| Андрей К. | Уэлби Оливка | Полурослик | Плут | [PDF](paella-valeciana/players/uelbi-olivka--sheet.pdf ':ignore') |
 
-**Подробная сводка по партии:** [party-summary.md](players/party-summary.md)
+**Подробная сводка по партии:** [party-summary.md](paella-valeciana/players/party-summary.md)
 
 ## Ключевые персонажи
 
 ### Принц-регент Луис Изысканный
-**Полное описание:** [characters/prince-luis.md](../characters/prince-luis.md)
+**Полное описание:** [characters/prince-luis.md](characters/prince-luis.md)
 **Роль:** VIP-персона, ради которой затевается весь квест
 **Раса:** Человек
 
 Величайший эстет континента, правитель малого королевства на важнейшем торговом пути между Севером и Югом. Коллекционирует редкие специи, вина и кулинарные шедевры. Говорят, может заплакать от по-настоящему прекрасного блюда. Торговый Альянс должен его впечатлить, иначе он может продать лояльность Северу или Югу.
 
 ### Энрико Штрудендо
-**Полное описание:** [characters/enrico-strudendo-chef.md](../characters/enrico-strudendo-chef.md)
+**Полное описание:** [characters/enrico-strudendo-chef.md](characters/enrico-strudendo-chef.md)
 **Роль:** Знаменитый повар Валенсии, квестодатель
 **Раса:** Человек
-**Ресторан:** [El Toro Bien Hecho](../locations/el-toro-bien-hecho-restaurant.md)
+**Ресторан:** [El Toro Bien Hecho](locations/el-toro-bien-hecho-restaurant.md)
 
 Горделивый, театральный повар из высших кругов. Говорит кулинарными метафорами, каждая реплика — маленький спектакль. Гениален во всём, кроме десертов (его фамилия Штрудендо — а штрудель никогда не получается). Именно экспериментальный десерт он предложит героям перед походом — это ловушка (см. Акт 1).
 
 ### Шептун
-**Полное описание:** [characters/sheptun-goblin-messenger.md](../characters/sheptun-goblin-messenger.md)
+**Полное описание:** [characters/sheptun-goblin-messenger.md](characters/sheptun-goblin-messenger.md)
 **Роль:** Посыльный Гильдии Приключенцев
 **Раса:** Гоблин
 
@@ -48,7 +48,7 @@
 > **Примечание:** Уэлби говорит на гоблинском — может общаться с Шептуном на его языке.
 
 ### Хаке Горрион (лодочник)
-**Полное описание:** [characters/boatman-buferalь.md](../characters/boatman-buferalь.md)
+**Полное описание:** [characters/boatman-buferalь.md](characters/boatman-buferalь.md)
 **Роль:** Лодочник-экскурсовод на озере Буфераль
 **Раса:** Человек
 
@@ -68,14 +68,14 @@
 Торговый город. Улицы, рынки, запахи специй. Здесь начинается приключение (Акт 0) и находится ресторан Энрико.
 
 ### 2. Ресторан El Toro Bien Hecho
-**Подробное описание:** [locations/el-toro-bien-hecho-restaurant.md](../locations/el-toro-bien-hecho-restaurant.md)
+**Подробное описание:** [locations/el-toro-bien-hecho-restaurant.md](locations/el-toro-bien-hecho-restaurant.md)
 **Расположение:** Валенсия
 **Владелец:** Энрико Штрудендо
 
 "El Toro Bien Hecho" — "Хорошо Прожаренный Бык". "Bien hecho" означает одновременно "хорошо сделанный" и степень прожарки стейка (well done).
 
 ### 3. Деревня и озеро Буфераль
-**Подробное описание:** [locations/lake-buferal-village.md](../locations/lake-buferal-village.md)
+**Подробное описание:** [locations/lake-buferal-village.md](locations/lake-buferal-village.md)
 
 Огромное озеро, рыбацкая деревня на одном берегу, дикий лес на другом. Здесь живёт лодочник Хаке Горрион — единственный способ переправиться на дикую сторону.
 
@@ -306,7 +306,7 @@
 
 ## Связь с общим миром
 
-**Локация:** [Деревня и озеро Буфераль](../locations/lake-buferal-village.md)
+**Локация:** [Деревня и озеро Буфераль](locations/lake-buferal-village.md)
 
 **Организации:**
 - Торговый Альянс Валенсии

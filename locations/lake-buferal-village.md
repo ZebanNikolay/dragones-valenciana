@@ -2,7 +2,7 @@
 
 **Тип:** Рыбацкая деревня + озеро
 **Расположение:** Окрестности Валенсии
-**Появляется в:** [Куролиск для Paella Valenciana](../paella-valeciana/oneshot-paella-valenciana.md)
+**Появляется в:** [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md)
 
 ## Озеро Буфераль
 
@@ -25,7 +25,7 @@
 ## Персонажи
 
 ### Хаке Горрион (лодочник)
-**Полное описание:** [characters/boatman-buferalь.md](../characters/boatman-buferalь.md)
+**Полное описание:** [characters/boatman-buferalь.md](characters/boatman-buferalь.md)
 
 Единственный способ переправиться на дикую сторону озера. Переделал рыбацкую лодку в прогулочную — фонарики, ленты, цветы. Возит горожан на романтические прогулки по озеру. На дикую сторону плавать отказывается — опасно и лодку жалко.
 

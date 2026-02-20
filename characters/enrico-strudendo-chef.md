@@ -2,8 +2,8 @@
 
 **Роль:** Знаменитый повар Валенсии
 **Раса:** Человек
-**Ресторан:** [El Toro Bien Hecho](../locations/el-toro-bien-hecho-restaurant.md)
-**Появляется в:** [Куролиск для Paella Valenciana](../paella-valeciana/oneshot-paella-valenciana.md)
+**Ресторан:** [El Toro Bien Hecho](locations/el-toro-bien-hecho-restaurant.md)
+**Появляется в:** [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md)
 
 ## Внешность
 

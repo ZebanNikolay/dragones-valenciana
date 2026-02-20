@@ -2,7 +2,7 @@
 
 **Тип:** Ресторан
 **Расположение:** Валенсия
-**Владелец:** [Энрико Штрудендо](../characters/enrico-strudendo-chef.md)
+**Владелец:** [Энрико Штрудендо](characters/enrico-strudendo-chef.md)
 
 ## Название
 

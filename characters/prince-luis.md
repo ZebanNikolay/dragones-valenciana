@@ -2,7 +2,7 @@
 
 **Роль:** VIP-персона, ради которой затевается весь квест
 **Раса:** Человек
-**Появляется в:** [Куролиск для Paella Valenciana](../paella-valeciana/oneshot-paella-valenciana.md)
+**Появляется в:** [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md)
 
 ## Кто он
 

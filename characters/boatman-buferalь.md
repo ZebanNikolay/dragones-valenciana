@@ -4,7 +4,7 @@
 **Представляется как:** Хаке Горрион (Jaque Gorrión — "воробей")
 **Роль:** Лодочник-экскурсовод на озере Буфераль
 **Раса:** Человек
-**Появляется в:** [Куролиск для Paella Valenciana](../paella-valeciana/oneshot-paella-valenciana.md)
+**Появляется в:** [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md)
 
 ## Известная информация
 

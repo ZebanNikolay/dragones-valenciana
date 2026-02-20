@@ -2,7 +2,7 @@
 
 **Роль:** Посыльный Гильдии Приключенцев
 **Раса:** Гоблин
-**Появляется в:** [Куролиск для Paella Valenciana](../paella-valeciana/oneshot-paella-valenciana.md)
+**Появляется в:** [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md)
 
 ## Известная информация
 
