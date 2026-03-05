@@ -2,7 +2,7 @@
 
 **Тип:** Рыбацкая деревня + озеро
 **Расположение:** Окрестности Валенсии
-**Появляется в:** [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md)
+**Появляется в:** [Куролиск для Paella Valenciana](adventures/001-paella-valeciana/oneshot-paella-valenciana.md)
 
 ## Озеро Буфераль
 

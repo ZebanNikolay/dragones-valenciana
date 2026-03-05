@@ -23,13 +23,13 @@
 
 | Игрок | Персонаж | Раса | Класс | Лист персонажа |
 |---|---|---|---|---|
-| Константин | Гракх | Орк | Монах | [PDF](paella-valeciana/players/grakh--sheet.pdf ':ignore'), [Предыстория](paella-valeciana/players/grakh--backstory.pdf ':ignore'), [Арт](paella-valeciana/players/grakh--art.png ':ignore') |
-| Андрей | Аль-Сайид | Человек | Воин | [PDF](paella-valeciana/players/al-sayid--sheet.pdf ':ignore'), [Предыстория](paella-valeciana/players/al-sayid--backstory.pdf ':ignore'), [Арт](paella-valeciana/players/al-sayid--art.jpeg ':ignore') |
-| Александр | Alfir Ga-Nor | Аасимар | Бард | [PDF](paella-valeciana/players/alfir-ga-nor--sheet.pdf ':ignore') |
-| Mias | Morrigan | Аасимар | Жрец | [PDF](paella-valeciana/players/morrigan--sheet.pdf ':ignore') |
-| Андрей К. | Уэлби Оливка | Полурослик | Плут | [PDF](paella-valeciana/players/uelbi-olivka--sheet.pdf ':ignore') |
+| Константин | Гракх | Орк | Монах | [PDF](adventures/001-paella-valeciana/players/grakh--sheet.pdf ':ignore'), [Предыстория](adventures/001-paella-valeciana/players/grakh--backstory.pdf ':ignore'), [Арт](adventures/001-paella-valeciana/players/grakh--art.png ':ignore') |
+| Андрей | Аль-Сайид | Человек | Воин | [PDF](adventures/001-paella-valeciana/players/al-sayid--sheet.pdf ':ignore'), [Предыстория](adventures/001-paella-valeciana/players/al-sayid--backstory.pdf ':ignore'), [Арт](adventures/001-paella-valeciana/players/al-sayid--art.jpeg ':ignore') |
+| Александр | Alfir Ga-Nor | Аасимар | Бард | [PDF](adventures/001-paella-valeciana/players/alfir-ga-nor--sheet.pdf ':ignore') |
+| Mias | Morrigan | Аасимар | Жрец | [PDF](adventures/001-paella-valeciana/players/morrigan--sheet.pdf ':ignore') |
+| Андрей К. | Уэлби Оливка | Полурослик | Плут | [PDF](adventures/001-paella-valeciana/players/uelbi-olivka--sheet.pdf ':ignore') |
 
-**Подробная сводка по партии:** [party-summary.md](paella-valeciana/players/party-summary.md)
+**Подробная сводка по партии:** [party-summary.md](adventures/001-paella-valeciana/players/party-summary.md)
 
 ## Ключевые персонажи
 

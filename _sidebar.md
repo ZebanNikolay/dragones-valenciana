@@ -1,7 +1,7 @@
 - **Paella Valenciana**
-  - [Приключение](paella-valeciana/oneshot-paella-valenciana.md)
-  - [Сводка по партии](paella-valeciana/players/party-summary.md)
-  - [Анонс](paella-valeciana/announcement-paella-valenciana.md)
+  - [Приключение](adventures/001-paella-valeciana/oneshot-paella-valenciana.md)
+  - [Сводка по партии](adventures/001-paella-valeciana/players/party-summary.md)
+  - [Анонс](adventures/001-paella-valeciana/announcement-paella-valenciana.md)
 
 - **Персонажи**
   - [Энрико Штрудендо](characters/enrico-strudendo-chef.md)

@@ -4,9 +4,9 @@
 
 ## Приключения
 
-- [Куролиск для Paella Valenciana](paella-valeciana/oneshot-paella-valenciana.md) — ван-шот, 2-й уровень, 5 игроков
+- [Куролиск для Paella Valenciana](adventures/001-paella-valeciana/oneshot-paella-valenciana.md) — ван-шот, 2-й уровень, 5 игроков
 
 ## Быстрые ссылки
 
-- [Сводка по партии](paella-valeciana/players/party-summary.md)
+- [Сводка по партии](adventures/001-paella-valeciana/players/party-summary.md)
 - [Хоумбрю правила](homebrew.md)
