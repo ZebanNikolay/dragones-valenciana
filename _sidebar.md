@@ -1,7 +1,10 @@
-- **Paella Valenciana**
-  - [Приключение](adventures/001-paella-valeciana/oneshot-paella-valenciana.md)
-  - [Сводка по партии](adventures/001-paella-valeciana/players/party-summary.md)
-  - [Анонс](adventures/001-paella-valeciana/announcement-paella-valenciana.md)
+- **Приключения**
+  - **001 — Paella Valenciana** *(сыграно)*
+    - [Приключение](adventures/001-paella-valeciana/oneshot-paella-valenciana.md)
+    - [Сводка по партии](adventures/001-paella-valeciana/players/party-summary.md)
+    - [Анонс](adventures/001-paella-valeciana/announcement-paella-valenciana.md)
+  - **002 — Los Lobos de Buferalь** *(подготовка)*
+    - [Оригинал: Wolves of Welton (RU)](adventures/002-los-lobos-de-buferahl/raw/wolves-of-welton-ru.md)
 
 - **Персонажи**
   - [Энрико Штрудендо](characters/enrico-strudendo-chef.md)
@@ -12,6 +15,9 @@
 - **Локации**
   - [El Toro Bien Hecho](locations/el-toro-bien-hecho-restaurant.md)
   - [Деревня и озеро Буфераль](locations/lake-buferal-village.md)
+
+- **Организации**
+  - [Орден Священного Пламени](organizations/orden-sacred-flame.md)
 
 - **Лор**
   - [Карта фракций](lore/factions.md)
