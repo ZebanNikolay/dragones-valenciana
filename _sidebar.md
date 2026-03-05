@@ -13,5 +13,9 @@
   - [El Toro Bien Hecho](locations/el-toro-bien-hecho-restaurant.md)
   - [Деревня и озеро Буфераль](locations/lake-buferal-village.md)
 
+- **Лор**
+  - [Карта фракций](lore/factions.md)
+  - [История мира и Валенсии](lore/history.md)
+
 - **Мир**
   - [Хоумбрю правила](homebrew.md)

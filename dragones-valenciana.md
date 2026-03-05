@@ -1,11 +1,22 @@
-This code defines a sealed interface `CloseTabsDialogType` that represents three possible “close tabs” actions in a dialog:
+# Dragones Valenciana
 
-```kotlin
-private sealed interface CloseTabsDialogType {
-    object CloseAll : CloseTabsDialogType
-    object CloseAllIncognito : CloseTabsDialogType
-    object CloseSelected : CloseTabsDialogType
-}
-```
+Фэнтезийная D&D кампания в сеттинге, вдохновлённом средневековой Испанией.
 
-It has three implementations: `CloseAll` for closing all tabs, `CloseAllIncognito` for closing all incognito tabs, and `CloseSelected` for closing only selected tabs. [chrome](chrome://newtab/)
+## Мир
+
+Драконы на Севере, теократия на Юге, и вольный торговый город Валенсия посередине. Магия завязана на лей-линии, а память о Первой Битве — катастрофе, выжегшей целый регион — определяет политику всех сторон.
+
+## Основные силы
+
+- **Северные королевства** (Арагон, Наварра, Кастилия, Леон) — монархии, легитимность которых подтверждают драконы
+- **Южные эмираты** (Кордовский халифат, Дения, Гранада, Толедо, Севилья, Бадахос) — теократия аасимаров, распад после смерти халифа
+- **Валенсия** — нейтральный город-государство, торговый и дипломатический хаб
+- **Торговый союз** — теневая сверхдержава, финансирует всех
+- **Орден Священного Пламени** — серый кардинал Севера, посредники между людьми и драконами
+- **Горные княжества дварфов** — три действующих и одно потерянное (Подгорная бездна)
+
+## Подробнее
+
+- [Карта фракций](lore/factions.md) — все государства и их ключевые темы
+- [История мира и Валенсии](lore/history.md) — подробный лор: политика, магия, районы города
+- [Хоумбрю правила](homebrew.md)
