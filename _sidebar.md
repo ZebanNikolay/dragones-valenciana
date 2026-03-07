@@ -3,8 +3,9 @@
     - [Приключение](adventures/001-paella-valeciana/oneshot-paella-valenciana.md)
     - [Сводка по партии](adventures/001-paella-valeciana/players/party-summary.md)
     - [Анонс](adventures/001-paella-valeciana/announcement-paella-valenciana.md)
-  - **002 — Festival at Redwater** *(подготовка)*
-    - [Оригинал: Festival at Redwater (RU)](adventures/002-festival-at-redwater/raw/festival-at-redwater-ru.md)
+  - **002 — Фиеста де Фаэс** *(подготовка)*
+    - [Приключение](adventures/002-fiesta-de-faes/fiesta-de-faes.md)
+    - [Оригинал: Festival at Redwater (RU)](adventures/002-fiesta-de-faes/raw/festival-at-redwater-ru.md)
   - **003 — Los Lobos de Buferalь** *(подготовка)*
     - [Оригинал: Wolves of Welton (RU)](adventures/003-los-lobos-de-buferahl/raw/wolves-of-welton-ru.md)
 
