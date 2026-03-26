@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Орущие на Луну — Лист игрока</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #222; }
+  .sheet { border: 2px solid #333; padding: 12px; }
+  h1 { font-size: 16pt; margin-bottom: 0; }
+  .player { font-size: 10pt; color: #666; margin-bottom: 8px; }
+  .row { display: flex; gap: 12px; margin-bottom: 6px; }
+  .col { flex: 1; }
+  .box { border: 1px solid #999; padding: 4px 8px; margin-bottom: 4px; }
+  .box-title { font-size: 9pt; font-weight: bold; color: #666; text-transform: uppercase; }
+  .stats-table { border-collapse: collapse; width: 100%; text-align: center; margin: 6px 0; }
+  .stats-table th, .stats-table td { border: 1px solid #999; padding: 4px 8px; }
+  .stats-table th { background: #333; color: #fff; font-size: 10pt; }
+  .stats-table td { font-size: 14pt; font-weight: bold; }
+  .stats-table .mod { font-size: 10pt; color: #666; font-weight: normal; }
+  .section-title { font-size: 11pt; font-weight: bold; border-bottom: 1px solid #ccc; margin: 8px 0 4px; }
+  table.attacks { border-collapse: collapse; width: 100%; font-size: 10pt; }
+  table.attacks th, table.attacks td { border: 1px solid #ccc; padding: 3px 6px; }
+  table.attacks th { background: #eee; }
+  ul { margin-left: 14px; font-size: 10pt; }
+  li { margin-bottom: 2px; }
+  .hp-track { font-size: 16pt; font-weight: bold; text-align: center; border: 2px solid #d0021b; padding: 6px; margin: 4px 0; }
+  .big-num { font-size: 20pt; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<h1>Орущие на Луну</h1>
+<div class="player">Игрок: Таня / @MotherOfSharkz • Орк • Друид 2 • Фермер</div>
+
+<div class="row">
+  <div class="col">
+    <div class="box"><div class="box-title">AC</div><span class="big-num">15</span> кожаный + щит</div>
+  </div>
+  <div class="col">
+    <div class="hp-track">HP: <span class="big-num">23</span> / 23</div>
+  </div>
+  <div class="col">
+    <div class="box"><div class="box-title">Скорость</div><span class="big-num">30</span> фт</div>
+  </div>
+  <div class="col">
+    <div class="box"><div class="box-title">Инициатива</div><span class="big-num">+2</span></div>
+  </div>
+</div>
+
+<table class="stats-table">
+  <tr><th>СИЛ</th><th>ЛОВ</th><th>ТЕЛ</th><th>ИНТ</th><th>МДР</th><th>ХАР</th></tr>
+  <tr><td>8 <span class="mod">(-1)</span></td><td>14 <span class="mod">(+2)</span></td><td>16 <span class="mod">(+3)</span></td><td>10 <span class="mod">(+0)</span></td><td>16 <span class="mod">(+3)</span></td><td>10 <span class="mod">(+0)</span></td></tr>
+</table>
+
+<div class="section-title">Атаки</div>
+<table class="attacks">
+  <tr><th>Оружие</th><th>Попадание</th><th>Урон</th><th>Примечание</th></tr>
+  <tr><td><strong>Shillelagh (посох)</strong></td><td>+5</td><td>1d8+3 дробящий</td><td>Бонусное действие, 1 мин</td></tr>
+  <tr><td>Посох (без Shillelagh)</td><td>+1</td><td>1d6-1 дробящий</td><td></td></tr>
+</table>
+
+<div class="section-title">Заклинания (DC 13, атака +5) — 3 ячейки 1 круга</div>
+<table class="attacks">
+  <tr><th>Заклинание</th><th>Время</th><th>Дальность</th><th>Эффект</th></tr>
+  <tr><td><strong>Healing Word</strong></td><td>1BA</td><td>60 фт</td><td>1d4+3 HP (бонусное!)</td></tr>
+  <tr><td><strong>Ice Knife</strong></td><td>1A</td><td>60 фт</td><td>1d10 колющий + 2d6 холод (ЛОВ DC 13)</td></tr>
+  <tr><td>Cure Wounds</td><td>1A</td><td>Касание</td><td>1d8+3 HP</td></tr>
+  <tr><td>Faerie Fire</td><td>1A</td><td>60 фт</td><td>Конц. Преимущество на атаки</td></tr>
+  <tr><td>Earth Tremor</td><td>1A</td><td>10 фт</td><td>1d6 дробящий, ЛОВ DC 13 или опрокинут</td></tr>
+  <tr><td>Thunderwave</td><td>1A</td><td>15 фт куб</td><td>2d8 звук, ТЕЛ DC 13 или отброс 10 фт</td></tr>
+  <tr><td>Entangle</td><td>1A</td><td>90 фт</td><td>Конц. СИЛ DC 13 или опутан</td></tr>
+  <tr><td><strong>Purify Food/Drink</strong></td><td>Ритуал</td><td>10 фт</td><td>Очищает еду/напитки от яда!</td></tr>
+  <tr><td>Detect Poison/Disease</td><td>Ритуал</td><td>30 фт</td><td>Обнаружение яда!</td></tr>
+</table>
+<ul>
+  <li><strong>Заговоры:</strong> Shillelagh, Message</li>
+</ul>
+
+<div class="section-title">Способности</div>
+<ul>
+  <li><strong>Дикий облик:</strong> 2/длинный отдых, 1 час, макс CR 1/4, бонусное действие</li>
+  <li><strong>Адреналиновый рывок:</strong> бонусное действие, Рывок + 2 временных HP, 2/короткий отдых</li>
+  <li><strong>Неукротимая выносливость:</strong> 0 HP → 1 HP, 1/длинный отдых</li>
+  <li><strong>Tough:</strong> +4 HP (уже включены)</li>
+  <li><strong>Тёмное зрение:</strong> 120 фт!</li>
+</ul>
+
+<div class="section-title">Навыки (владение)</div>
+<ul>
+  <li>Уход за животными +5, Медицина +5, Выживание +5, Восприятие +3, Проницательность +3, Природа +2</li>
+</ul>
+
+</div>
+</body>
+</html>

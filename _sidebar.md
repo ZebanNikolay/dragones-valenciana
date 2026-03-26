@@ -9,6 +9,8 @@
     - [Анонс](adventures/002-fiesta-de-faes/announcement-fiesta-de-faes.md)
     - [Оригинал: Festival at Redwater (RU)](adventures/002-fiesta-de-faes/raw/festival-at-redwater-ru.md)
   - **003 — Los Lobos de Buferalь** *(подготовка)*
+    - [Приключение](adventures/003-los-lobos-de-buferahl/los-lobos-de-buferahl.md)
+    - [Анонс](adventures/003-los-lobos-de-buferahl/announcement-los-lobos.md)
     - [Оригинал: Wolves of Welton (RU)](adventures/003-los-lobos-de-buferahl/raw/wolves-of-welton-ru.md)
 
 - **Персонажи**
@@ -31,9 +33,6 @@
 
 - **Игроки**
   - [Ростер](players/roster.md)
-  - [Лоран де'Ривер](players/loran-de-river.md)
-  - [Сафира Штаарн](players/safira-shtaarn.md)
-  - [Нитра](players/nitra.md)
 
 - **Лор**
   - [Карта фракций](lore/factions.md)

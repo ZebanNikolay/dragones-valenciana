@@ -4,7 +4,7 @@
 **Представляется как:** Хаке Горрион (Jaque Gorrión — "воробей")
 **Роль:** Лодочник-экскурсовод на озере Буфераль
 **Раса:** Человек
-**Появляется в:** [Куролиск для Paella Valenciana](adventures/001-paella-valeciana/oneshot-paella-valenciana.md)
+**Появляется в:** [Куролиск для Paella Valenciana](adventures/001-paella-valeciana/oneshot-paella-valenciana.md), [Los Lobos de Buferahl](adventures/003-los-lobos-de-buferahl/los-lobos-de-buferahl.md)
 
 ## Известная информация
 
@@ -12,6 +12,7 @@
 - Переделал свою рыбацкую лодку в прогулочную: украсил, навесил фонарики/ленты/цветы
 - Зарабатывает тем, что возит горожан по озеру на закате — романтические прогулки, влюблённые парочки
 - На дикую сторону озера не плавает — опасно, и лодку жалко
+- Его дядя — деревенский чародей, пропал ~3 месяца назад на дикой стороне озера (см. [Los Lobos de Buferahl](adventures/003-los-lobos-de-buferahl/los-lobos-de-buferahl.md))
 
 ## Имя и фамилия
 

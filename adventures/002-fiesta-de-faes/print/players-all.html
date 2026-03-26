@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Все игроки — Фиеста де Фаэс</title>
+<style>
+  @page { margin: 1cm 1.2cm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5pt; line-height: 1.25; color: #222; }
+  .player { border: 2px solid #333; padding: 5px 8px; margin-bottom: 4px; }
+  .name { font-size: 13pt; font-weight: bold; display: inline; }
+  .meta { font-size: 8pt; color: #666; display: inline; margin-left: 8px; }
+  .top-row { display: flex; gap: 6px; margin: 2px 0; align-items: center; }
+  .stat-box { border: 1px solid #999; padding: 2px 6px; text-align: center; font-size: 9pt; }
+  .stat-box .label { font-size: 7pt; color: #666; font-weight: bold; }
+  .stat-box .val { font-size: 12pt; font-weight: bold; }
+  .stats-row { display: flex; gap: 0; margin: 3px 0; }
+  .stats-row .cell { flex: 1; text-align: center; border: 1px solid #bbb; padding: 1px 2px; }
+  .stats-row .cell .l { font-size: 7pt; font-weight: bold; color: #666; }
+  .stats-row .cell .v { font-size: 9pt; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; font-size: 8pt; margin: 2px 0; }
+  td, th { border: 1px solid #ccc; padding: 1px 4px; }
+  th { background: #eee; text-align: left; }
+  .section { font-weight: bold; font-size: 8pt; margin-top: 2px; border-bottom: 1px solid #ccc; }
+  ul { margin: 0 0 0 12px; font-size: 8pt; }
+  li { margin: 0; }
+  .key { background: #fff3e0; border: 1px solid #f5a623; padding: 1px 4px; font-size: 8pt; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<div style="text-align:right; font-size:7.5pt; color:#666; margin-bottom:2px">⟐К = концентрация (ТЕЛ DC 10 при уроне, теряется при новом ⟐К)</div>
+
+<!-- ЛОРАН -->
+<div class="player">
+  <div><span class="name">Лоран де'Ривер</span><span class="meta">Лада / @redarW — Драконорожденный (Белый) — Плут 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">11</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+2</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">15(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">11(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Короткий меч</td><td>+4</td><td>1d6+2 колющ.</td><td>Фехтовальное</td></tr>
+    <tr><td>Кинжал ×2 (Nick)</td><td>+4</td><td>1d4+2 колющ.</td><td>Доп. атака</td></tr>
+    <tr><td>Короткий лук (Vex)</td><td>+4</td><td>1d6+2 колющ.</td><td>Преим. след. атаки</td></tr>
+    <tr><td>Дыхание (Холод)</td><td>ЛОВ DC12</td><td>1d10</td><td>Конус 15фт, 2/длинный</td></tr>
+  </table>
+  <ul>
+    <li><b>Скрытая атака +1d6</b> (преимущество или союзник рядом) | <b>Хитрое действие</b> (BA: Рывок/Отход/Прятки)</li>
+    <li><b>Экспертиза:</b> Ловкость рук, Скрытность | <b>Сопротивление:</b> холод | <b>Тёмнозрение</b> 60фт</li>
+    <li>Навыки: Обман, Ловкость рук★, Скрытность★, Проницательность, История, Убеждение, Расследование, Выживание, Восприятие</li>
+  </ul>
+</div>
+
+<!-- САФИРА -->
+<div class="player">
+  <div><span class="name">Сафира Штаарн</span><span class="meta">Ада / @Adallirian — Драконорожденный (Синий) — Друид 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+1</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">11(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие/Заклинание</th><th>Попад.</th><th>Урон/Эффект</th><th>Примечание</th></tr>
+    <tr><td>Шипастый хлыст (заговор)</td><td>+5</td><td>1d6 колющ.</td><td>30фт, притяг. на 10фт</td></tr>
+    <tr><td>Дыхание (Молния)</td><td>ЛОВ DC12</td><td>1d10</td><td>Конус 15фт, 2/длинный</td></tr>
+  </table>
+  <ul>
+    <li><b>Заклинания</b> DC 13, +5 | 3 ячейки 1 круга | Заговоры: Починка, Шипастый хлыст (+5 атака), Послание</li>
+    <li><b>Cure Wounds</b> 1d8+3 касание | <b>Ice Knife</b> +5 атака, промах→ЛОВ DC13 2d6 | <b>Faerie Fire</b> ⟐К 20фт куб, ЛОВ DC13 | Goodberry, Jump, Speak w/Animals</li>
+    <li><b>Дикий облик</b> 2/длинный, CR 1/4 | <b>Целитель</b> (аптечка как действие) | <b>Сопротивление:</b> молния | Тёмнозр. 60фт</li>
+  </ul>
+</div>
+
+<!-- ОРУЩИЕ НА ЛУНУ -->
+<div class="player">
+  <div><span class="name">Орущие на Луну</span><span class="meta">Таня / @MotherOfSharkz — Орк — Друид 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">23</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+2</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">10(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие/Заклинание</th><th>Попад.</th><th>Урон/Эффект</th><th>Примечание</th></tr>
+    <tr><td>Shillelagh (посох)</td><td>+5</td><td>1d8+3 дробящ.</td><td>BA активация</td></tr>
+    <tr><td>Healing Word</td><td>—</td><td>1d4+3 HP</td><td>BA! 60фт</td></tr>
+    <tr><td>Ice Knife</td><td>+5</td><td>1d10+2d6</td><td>60фт, ЛОВ DC13 взрыв</td></tr>
+  </table>
+  <ul>
+    <li><b>Заклинания</b> DC 13, +5 | 3 ячейки 1 круга | Заговоры: Shillelagh (BA, касание), Message</li>
+    <li>Cure Wounds 1d8+3 касание | <b>Faerie Fire</b> ⟐К ЛОВ DC13 | Earth Tremor ЛОВ DC13 | Thunderwave ТЕЛ DC13 | <b>Entangle</b> ⟐К СИЛ DC13</li>
+    <li><b>Purify Food/Drink (ритуал!)</b> | <b>Detect Poison (ритуал!)</b> | Healing Word BA 60фт</li>
+    <li><b>Дикий облик</b> 2/длинный | <b>Адреналиновый рывок</b> BA Рывок+2HP 2/короткий | <b>Неукротимая выносливость</b> 0→1HP | Тёмнозр. <b>120фт!</b></li>
+  </ul>
+  <div class="key"><b>Акт 2:</b> Purify Food/Drink очищает эль, Detect Poison обнаруживает яд — ключевые заклинания!</div>
+</div>
+
+<!-- FOMINFIN -->
+<div class="player">
+  <div><span class="name">FominFin's Character</span><span class="meta">Илья / @Fomin_Iliya — Человек — Паладин 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">18</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">18</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+3</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">15(+2)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Длинный меч (Sap)</td><td>+5</td><td>1d8+3 рубящ.</td><td>Помеха след. атаке цели</td></tr>
+    <tr><td>Sacred Flame (заговор)</td><td>ЛОВ DC12</td><td>1d8 сияющ.</td><td>60фт</td></tr>
+    <tr><td>Divine Smite</td><td>—</td><td>+2d8 сияющ.</td><td>BA, 1/длинный бесплатно</td></tr>
+  </table>
+  <ul>
+    <li><b>Lay On Hands</b> 10HP/длинный (исцеление BA, касание) | <b>Очищение яда:</b> 5HP из пула → снимает отравление!</li>
+    <li>2 ячейки 1 круга | Заговоры: Sacred Flame (ЛОВ DC12, без атаки), <b>Guidance</b> ⟐К +1d4 к проверке | <b>Alert:</b> +2 иниц., обмен иниц. с союзником</li>
+    <li>Навыки: Атлетика +5, Убеждение +4 | Спасбр: МДР +3, ХАР +4</li>
+  </ul>
+  <div class="key"><b>Акт 2:</b> Очищение яда (Lay On Hands, 5HP) снимает отравление с игроков и NPC!</div>
+</div>
+
+<!-- НИТРА -->
+<div class="player">
+  <div><span class="name">Нитра</span><span class="meta">Ксюша / @kseniiaKrasilnikova — Тифлинг — Воин 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">17</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">22</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+1</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">11(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Двуручный меч</td><td>+5</td><td>2d6+3 рубящ.</td><td>Savage Attacker: урон ×2, лучший</td></tr>
+    <tr><td>Fire Bolt (заговор)</td><td>+3</td><td>1d10 огонь</td><td>120фт</td></tr>
+  </table>
+  <ul>
+    <li><b>Второе дыхание</b> BA 1d10+2HP ×2/длинный | <b>Action Surge</b> доп. действие 1/короткий | <b>Тактический ум</b> +1d10 к провалу</li>
+    <li><b>Сопротивление:</b> огонь | Тёмнозр. 60фт | Thaumaturgy | Спасбр: СИЛ +5, <b>ТЕЛ +5!</b> | Навыки: Атлетика +5, Запугивание +2, Медицина +3 | Языки: Common, Драконий, <b>Гоблинский</b></li>
+  </ul>
+</div>
+
+</body>
+</html>

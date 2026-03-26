@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Фиеста де Фаэс — План игры</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #222; }
+  h1 { font-size: 16pt; text-align: center; margin-bottom: 8px; border-bottom: 2px solid #333; padding-bottom: 4px; }
+  h2 { font-size: 12pt; margin-top: 10px; margin-bottom: 4px; background: #333; color: #fff; padding: 2px 8px; }
+  .time { font-weight: bold; font-size: 11pt; color: #555; min-width: 50px; display: inline-block; }
+  .block { margin: 4px 0; padding: 4px 0 4px 8px; border-left: 3px solid #ccc; }
+  .block.act0 { border-left-color: #4a90d9; }
+  .block.act1 { border-left-color: #f5a623; }
+  .block.transition { border-left-color: #d0021b; }
+  .block.act2 { border-left-color: #7b3f8d; }
+  .block.brewery { border-left-color: #4a4a4a; }
+  .block.end { border-left-color: #27ae60; }
+  .checkbox { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #333; margin-right: 6px; vertical-align: middle; }
+  .note { font-size: 9pt; color: #666; margin-left: 20px; }
+  .music { font-size: 9pt; background: #f0f0f0; padding: 1px 6px; border-radius: 3px; }
+  .reminder { font-size: 9pt; font-style: italic; color: #d0021b; margin-left: 20px; }
+  .sub { margin-left: 24px; font-size: 10pt; }
+  table { border-collapse: collapse; width: 100%; margin: 4px 0; font-size: 10pt; }
+  td, th { border: 1px solid #ccc; padding: 4px 6px; height: 24px; text-align: left; }
+  th { background: #f0f0f0; }
+</style>
+</head>
+<body>
+
+<h1>Фиеста де Фаэс — План игры для DM</h1>
+
+<h2>Акт 0: Знакомство</h2>
+
+<div class="block act0">
+  <span class="time">12:30</span> <span class="checkbox"></span> Знакомство за столом: имена, опыт, ожидания<br>
+  <span class="note">Кратко: игра ~4 часа, праздник → детектив → бой. Вопросы?</span>
+</div>
+
+<div class="block act0">
+  <span class="time">12:45</span> <span class="checkbox"></span> Spotlight: Шептун к каждому игроку <span class="music">🎵 знакомство</span><br>
+  <div class="sub">
+    <span class="checkbox"></span> Лада (Лоран) — инфо: Баррио Корреос, квартал бегунов, задание Гильдии<br>
+    <span class="checkbox"></span> Ада (Сафира) — инфо: La Última Milla, Мерседес, койки<br>
+    <span class="checkbox"></span> Таня (Орущие) — выдать зелье лечения (2к4+2)<br>
+    <span class="checkbox"></span> Илья (FominFin) — выдать листовки Гильдии<br>
+    <span class="checkbox"></span> Ксюша (Нитра) — инфо: файас-гоблин + зелье + листовки<br>
+  </div>
+  <span class="reminder">Каждому: зелье + листовки!</span>
+</div>
+
+<div class="block act0">
+  <span class="time">13:00</span> <span class="checkbox"></span> Таверна: Мерседес встречает партию<br>
+  <span class="note">Шутка: «Не было ничего быстрее, чем Мерседес»</span><br>
+  <div class="sub">
+    <span class="checkbox"></span> Задание 1: Файас-гоблин покосился (Атлетика DC 12 / Расследование DC 10 / магия)<br>
+    <span class="checkbox"></span> Задание 2: Бочки с элем → Пепито (Атлетика DC 10) → знакомство с Пепито<br>
+  </div>
+  <span class="reminder">Бочки = отравленный эль! Партия сама везёт яд.</span>
+</div>
+
+<h2>Акт 1: Праздник</h2>
+
+<div class="block act1">
+  <span class="time">13:20</span> <span class="checkbox"></span> Праздник начинается! <span class="music">🎵 праздник/фестиваль</span><br>
+  <span class="note">Предлагать игры парами — игроки выбирают. Записывать кружки эля!</span>
+</div>
+
+<div class="block act1">
+  <div class="sub">
+    <span class="checkbox"></span> Пара 1: Поедание пирогов + Бак для купания<br>
+    <span class="checkbox"></span> Пара 2: Напёрстки + Армрестлинг<br>
+    <span class="checkbox"></span> Пара 3: Кольцеброс + Угадай число<br>
+    <span class="checkbox"></span> Пара 4: Гонки псевдодраконов + Силомер<br>
+    <span class="checkbox"></span> (Опционально) Проигравшийся пьяница после гонок<br>
+  </div>
+</div>
+
+<div class="block act1">
+  <span class="note">Трекер эля — записать кто сколько выпил:</span><br>
+  <table>
+    <tr><th>Игрок</th><th>Кружек эля</th><th>DC отравления</th></tr>
+    <tr><td>Лоран (Лада)</td><td style="width:100px"></td><td style="width:100px"></td></tr>
+    <tr><td>Сафира (Ада)</td><td></td><td></td></tr>
+    <tr><td>Орущие (Таня)</td><td></td><td></td></tr>
+    <tr><td>FominFin (Илья)</td><td></td><td></td></tr>
+    <tr><td>Нитра (Ксюша)</td><td></td><td></td></tr>
+  </table>
+  <span class="note">DC = 10 + 2 × кружек</span>
+</div>
+
+<h2>Переход: La Cremà</h2>
+
+<div class="block transition">
+  <span class="time">14:35</span> <span class="checkbox"></span> Маскелта — петарды, рот приоткрыть!<br>
+  <span class="checkbox"></span> Сжигание файас-гоблина (Мерседес поджигает)<br>
+  <span class="checkbox"></span> Ночь → все спят в La Última Milla
+</div>
+
+<div class="block transition">
+  <span class="time">14:50</span> <span class="checkbox"></span> ПЕРЕРЫВ (~10 мин)
+</div>
+
+<h2>Акт 2: Утро</h2>
+
+<div class="block act2">
+  <span class="time">15:00</span> <span class="checkbox"></span> Бросок ТЕЛ — порядок пробуждения<br>
+  <table>
+    <tr><th>Игрок</th><th>Бросок ТЕЛ</th><th>Порядок</th><th>Спасбросок отравления</th><th>Отравлен?</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="block act2">
+  <span class="checkbox"></span> Первый слышит шорх-шорх (подметальщик за окном)<br>
+  <span class="checkbox"></span> Рикардо за стойкой — мать на площади<br>
+  <span class="checkbox"></span> Странности: гонец не мигает, бродящий сосед, группа на скамейке<br>
+</div>
+
+<div class="block act2">
+  <span class="time">15:20</span> <span class="checkbox"></span> Сцена с Пепито — два отравленных напали, двойники рассыпаются<br>
+  <span class="checkbox"></span> Пепито: «Все пили эль → бочки от Мерседес → найти её»<br>
+  <span class="checkbox"></span> Мерседес на площади → рассказывает про пивоварню<br>
+</div>
+
+<h2>Пивоварня</h2>
+
+<div class="block brewery">
+  <span class="time">15:50</span> <span class="checkbox"></span> Вход: парадная (DC 10) или ворота (открыто). Вонь!<br>
+  <span class="checkbox"></span> 1 этаж: 3 Мясные Слизи (сюрприз — Восприятие DC 13)<br>
+  <span class="checkbox"></span> Офис: журнал поставок (бочка дрожжей — не заказывали)<br>
+</div>
+
+<div class="block brewery">
+  <span class="time">16:10</span> <span class="checkbox"></span> Лестница обрушивается (ЛОВ DC 12, 1d6 урон), пролом (Атлетика DC 12)<br>
+  <span class="checkbox"></span> Дверь 1: останки работников<br>
+  <span class="checkbox"></span> Дверь 2: кладовая, пролом в стене, бормотание<br>
+  <span class="checkbox"></span> Дверь 3 (заперта): Бормочущий Пожиратель!<br>
+</div>
+
+<div class="block brewery">
+  <span class="reminder">Если слишком тяжело → Пепито с двойниками! Если легко → запасная слизь / вторая форма босса</span>
+</div>
+
+<h2>Заключение</h2>
+
+<div class="block end">
+  <span class="time">16:35</span> <span class="checkbox"></span> Пожиратель уничтожен, горожане приходят в себя<br>
+  <span class="checkbox"></span> Возврат в La Última Milla, Мерседес благодарит<br>
+  <span class="checkbox"></span> Пепито вручает 5 билетов каждому<br>
+  <span class="checkbox"></span> Лут: 15 зм + серебряное кольцо (5 зм) + зелье от Мерседес<br>
+  <span class="checkbox"></span> Обмен билетов на призы<br>
+  <span class="time">16:50</span> <span class="checkbox"></span> Конец!<br>
+</div>
+
+</body>
+</html>

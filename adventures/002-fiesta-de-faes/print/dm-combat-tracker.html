@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Фиеста де Фаэс — Боевой трекер DM</title>
+<style>
+  @page { margin: 1.5cm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #222; }
+  h1 { font-size: 16pt; text-align: center; margin-bottom: 8px; border-bottom: 2px solid #333; padding-bottom: 4px; }
+  h2 { font-size: 13pt; background: #333; color: #fff; padding: 3px 10px; margin-top: 12px; margin-bottom: 6px; }
+  table { border-collapse: collapse; width: 100%; margin: 6px 0; font-size: 11pt; }
+  td, th { border: 1px solid #999; padding: 5px 8px; height: 28px; }
+  th { background: #eee; text-align: left; }
+  .players-table td:first-child { font-weight: bold; }
+  .page-break { }
+
+  .stat-block { border: 2px solid #333; padding: 10px 12px; margin-bottom: 10px; }
+  .stat-name { font-size: 14pt; font-weight: bold; }
+  .stat-type { font-size: 10pt; font-style: italic; color: #666; }
+  .stat-line { font-size: 11pt; margin: 2px 0; }
+  .stats-grid { display: table; width: 100%; margin: 6px 0; border-collapse: collapse; }
+  .stats-grid .cell { display: table-cell; text-align: center; border: 1px solid #999; padding: 4px 8px; width: 16.66%; }
+  .stats-grid .cell .label { font-weight: bold; font-size: 10pt; color: #666; }
+  .stats-grid .cell .val { font-size: 13pt; font-weight: bold; }
+  .action { margin: 3px 0; font-size: 11pt; }
+  .action-name { font-weight: bold; font-style: italic; }
+  .note { font-size: 10pt; color: #d0021b; font-style: italic; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Боевой трекер DM</h1>
+
+<h2>Партия</h2>
+<table class="players-table">
+  <tr>
+    <th>Персонаж</th><th>AC</th><th>HP</th><th>Иниц.</th><th>ТЕЛ</th><th>Восп.</th><th>Ключевое</th>
+  </tr>
+  <tr>
+    <td>Лоран</td><td>11</td><td>13</td><td>+2</td><td>+2</td><td>11</td>
+    <td>Скрытая атака +1d6, Хитрое действие, Дыхание (холод)</td>
+  </tr>
+  <tr>
+    <td>Сафира</td><td>13</td><td>13</td><td>+1</td><td>+2</td><td>11</td>
+    <td>Cure Wounds, Ice Knife, Faerie Fire, Дыхание (молния)</td>
+  </tr>
+  <tr>
+    <td>Орущие</td><td>15</td><td>23</td><td>+2</td><td>+3</td><td>13</td>
+    <td>Healing Word (BA!), Purify Food, Detect Poison</td>
+  </tr>
+  <tr>
+    <td>FominFin</td><td>18</td><td>18</td><td>+3</td><td>+1</td><td>11</td>
+    <td>Lay On Hands 10HP, Очищение яда (5HP), Smite</td>
+  </tr>
+  <tr>
+    <td>Нитра</td><td>17</td><td>22</td><td>+1</td><td>+5!</td><td>11</td>
+    <td>2d6+3 Savage, Второе дыхание ×2, Action Surge</td>
+  </tr>
+</table>
+
+<h2>Инициатива</h2>
+<table>
+  <tr><th style="width:30px">#</th><th>Имя</th><th style="width:50px">Иниц.</th><th style="width:60px">HP</th><th>Состояние</th></tr>
+  <tr><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>4</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>7</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>8</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+
+<h2>Лут пивоварни</h2>
+<table>
+  <tr><td>15 зм (в слизи Пожирателя)</td><td>Серебряное кольцо (5 зм)</td><td>Ключ от парадной двери</td></tr>
+</table>
+
+<h2>Статблоки существ</h2>
+
+<div class="stat-block">
+  <div class="stat-name">Простолюдин (Отравленный)</div>
+  <div class="stat-type">Средний гуманоид, CR 0</div>
+  <div class="stat-line"><strong>AC</strong> 10 &nbsp;|&nbsp; <strong>HP</strong> 4 &nbsp;|&nbsp; <strong>Скорость</strong> 15 фт</div>
+  <div class="stats-grid">
+    <div class="cell"><div class="label">СИЛ</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ЛОВ</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ТЕЛ</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ИНТ</div><div class="val">3 (-4)</div></div>
+    <div class="cell"><div class="label">МДР</div><div class="val">6 (-2)</div></div>
+    <div class="cell"><div class="label">ХАР</div><div class="val">4 (-3)</div></div>
+  </div>
+  <div class="action"><span class="action-name">Удар.</span> +2, 5 фт, 2 (1d4) дробящий</div>
+  <div class="note">Не враги! Жертвы. Оттолкнуть/связать. Lesser Restoration снимает.</div>
+</div>
+
+<div class="stat-block">
+  <div class="stat-name">Мясная Слизь (&times;3)</div>
+  <div class="stat-type">Маленькая слизь, CR 1/4</div>
+  <div class="stat-line"><strong>AC</strong> 8 &nbsp;|&nbsp; <strong>HP</strong> 22 &nbsp;|&nbsp; <strong>Скорость</strong> 10 фт, лазание 10 фт</div>
+  <div class="stats-grid">
+    <div class="cell"><div class="label">СИЛ</div><div class="val">12 (+1)</div></div>
+    <div class="cell"><div class="label">ЛОВ</div><div class="val">6 (-2)</div></div>
+    <div class="cell"><div class="label">ТЕЛ</div><div class="val">14 (+2)</div></div>
+    <div class="cell"><div class="label">ИНТ</div><div class="val">1 (-5)</div></div>
+    <div class="cell"><div class="label">МДР</div><div class="val">6 (-2)</div></div>
+    <div class="cell"><div class="label">ХАР</div><div class="val">1 (-5)</div></div>
+  </div>
+  <div class="stat-line"><strong>Иммунитет:</strong> психический; ослепление, очарование, оглушение, истощение, испуг, опрокидывание</div>
+  <div class="stat-line"><strong>Чувства:</strong> слепое зрение 60 фт &nbsp;|&nbsp; Бесформенность &nbsp;|&nbsp; Паучье лазание</div>
+  <div class="action"><span class="action-name">Ложноножка.</span> +3, 5 фт, 4 (1d6+1) дробящий + 2 (1d4) кислота</div>
+  <table>
+    <tr><th>Слизь</th><th>HP (22)</th><th>Состояние</th></tr>
+    <tr><td>Слизь 1 (из лужи)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Слизь 2 (из-за бочек)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Слизь 3 (с потолка)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  </table>
+  <div class="note">Сюрприз: Восприятие DC 13. Слизь с потолка — преимущество на первую атаку.</div>
+</div>
+
+<h2>Босс: Бормочущий Пожиратель</h2>
+
+<div class="stat-block">
+  <div class="stat-name">Бормочущий Пожиратель</div>
+  <div class="stat-type">Средняя аберрация, CR 2</div>
+  <div class="stat-line"><strong>AC</strong> 9 &nbsp;|&nbsp; <strong>HP</strong> 67 &nbsp;|&nbsp; <strong>Скорость</strong> 10 фт</div>
+  <div class="stats-grid">
+    <div class="cell"><div class="label">СИЛ</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ЛОВ</div><div class="val">8 (-1)</div></div>
+    <div class="cell"><div class="label">ТЕЛ</div><div class="val">16 (+3)</div></div>
+    <div class="cell"><div class="label">ИНТ</div><div class="val">3 (-4)</div></div>
+    <div class="cell"><div class="label">МДР</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ХАР</div><div class="val">6 (-2)</div></div>
+  </div>
+  <div class="stat-line"><strong>Иммунитет:</strong> опрокидывание &nbsp;|&nbsp; <strong>Чувства:</strong> тёмное зрение 60 фт, пасс. Восприятие 10</div>
+
+  <div class="stat-line" style="margin-top:6px"><strong>Аберрантная почва (10 фт):</strong> сложная местность. Начало хода в зоне — СИЛ DC 10, провал — скорость = 0</div>
+  <div class="stat-line"><strong>Бормотание (20 фт):</strong> начало хода — МДР DC 10, провал — бросок d8:<br>
+    &nbsp;&nbsp;1–4: ничего не делает &nbsp;|&nbsp; 5–6: случайное движение &nbsp;|&nbsp; 7–8: атака по случайному в досягаемости</div>
+
+  <div class="action" style="margin-top:8px"><span class="action-name">Мультиатака:</span> Укус + Ослепляющая слюна (если перезаряжена)</div>
+  <div class="action"><span class="action-name">Укус.</span> +2, 5 фт. <strong>17 (5d6) колющий.</strong> СИЛ DC 10 — притянут на 5 фт</div>
+  <div class="action"><span class="action-name">Ослепляющая слюна (перезарядка 5–6).</span> 15 фт точка, ЛОВ DC 13 — ослеплён до конца след. хода</div>
+
+  <div style="margin-top:8px">
+    <strong>HP трекер (67):</strong><br>
+    <table>
+      <tr><td style="text-align:center; font-size:10pt; letter-spacing:2px">□□□□□□□□□□ □□□□□□□□□□ □□□□□□□□□□ □□□□□□□□□□ □□□□□□□□□□ □□□□□□□□□□ □□□□□□□</td></tr>
+    </table>
+    <strong>Перезарядка слюны:</strong> каждый ход d6 — на 5+ перезарядка &nbsp; □ □ □ □ □ □ □ □
+  </div>
+
+  <div class="note">Укус 5d6 (~17) может вынести за 1 удар! Тяжело → Пепито с двойниками. Легко → вторая форма.</div>
+</div>
+
+<div class="stat-block">
+  <div class="stat-name">Восставший Пожиратель (2-я форма, опционально)</div>
+  <div class="stat-type">Активируется на &le;33 HP, если бой слишком лёгкий</div>
+  <div class="stat-line"><strong>AC</strong> 10 &nbsp;|&nbsp; <strong>HP</strong> остаток &nbsp;|&nbsp; <strong>Скорость</strong> 25 фт (!)</div>
+  <div class="stats-grid">
+    <div class="cell"><div class="label">СИЛ</div><div class="val">14 (+2)</div></div>
+    <div class="cell"><div class="label">ЛОВ</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ТЕЛ</div><div class="val">16 (+3)</div></div>
+    <div class="cell"><div class="label">ИНТ</div><div class="val">3 (-4)</div></div>
+    <div class="cell"><div class="label">МДР</div><div class="val">10 (+0)</div></div>
+    <div class="cell"><div class="label">ХАР</div><div class="val">6 (-2)</div></div>
+  </div>
+  <div class="stat-line"><strong>Голоса мёртвых (20 фт):</strong> МДР DC 10 — помеха на след. атаку</div>
+  <div class="stat-line"><strong>Агония:</strong> конец хода — 3 (1d6) урон себе (каркас разрушает изнутри)</div>
+  <div class="stat-line"><strong>Реакция ярости:</strong> бесплатная атака по тому, кто нанёс урон (1/раунд)</div>
+  <div class="action" style="margin-top:6px"><span class="action-name">Мультиатака:</span> Укус + Когти</div>
+  <div class="action"><span class="action-name">Укус.</span> +4, 5 фт, 10 (3d6) колющий</div>
+  <div class="action"><span class="action-name">Когти.</span> +4, <strong>10 фт досягаемость</strong>, 7 (2d4+2) рубящий. СИЛ DC 12 — схвачен</div>
+  <div class="note">Быстрее, 2 атаки, длинные когти — но убивает себя. Агонию до 2d6 если партия на грани.</div>
+</div>
+
+</body>
+</html>

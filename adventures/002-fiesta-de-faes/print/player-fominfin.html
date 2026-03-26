@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>FominFin — Лист игрока</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #222; }
+  .sheet { border: 2px solid #333; padding: 12px; }
+  h1 { font-size: 16pt; margin-bottom: 0; }
+  .player { font-size: 10pt; color: #666; margin-bottom: 8px; }
+  .row { display: flex; gap: 12px; margin-bottom: 6px; }
+  .col { flex: 1; }
+  .box { border: 1px solid #999; padding: 4px 8px; margin-bottom: 4px; }
+  .box-title { font-size: 9pt; font-weight: bold; color: #666; text-transform: uppercase; }
+  .stats-table { border-collapse: collapse; width: 100%; text-align: center; margin: 6px 0; }
+  .stats-table th, .stats-table td { border: 1px solid #999; padding: 4px 8px; }
+  .stats-table th { background: #333; color: #fff; font-size: 10pt; }
+  .stats-table td { font-size: 14pt; font-weight: bold; }
+  .stats-table .mod { font-size: 10pt; color: #666; font-weight: normal; }
+  .section-title { font-size: 11pt; font-weight: bold; border-bottom: 1px solid #ccc; margin: 8px 0 4px; }
+  table.attacks { border-collapse: collapse; width: 100%; font-size: 10pt; }
+  table.attacks th, table.attacks td { border: 1px solid #ccc; padding: 3px 6px; }
+  table.attacks th { background: #eee; }
+  ul { margin-left: 14px; font-size: 10pt; }
+  li { margin-bottom: 2px; }
+  .hp-track { font-size: 16pt; font-weight: bold; text-align: center; border: 2px solid #d0021b; padding: 6px; margin: 4px 0; }
+  .big-num { font-size: 20pt; }
+  .important { background: #fff3e0; padding: 4px 8px; border: 1px solid #f5a623; margin-top: 6px; font-size: 10pt; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<h1>FominFin's Character</h1>
+<div class="player">Игрок: Илья / @Fomin_Iliya • Человек • Паладин 2 • Дворянин</div>
+
+<div class="row">
+  <div class="col">
+    <div class="box"><div class="box-title">AC</div><span class="big-num">18</span> кольчуга + щит</div>
+  </div>
+  <div class="col">
+    <div class="hp-track">HP: <span class="big-num">18</span> / 18</div>
+  </div>
+  <div class="col">
+    <div class="box"><div class="box-title">Скорость</div><span class="big-num">30</span> фт</div>
+  </div>
+  <div class="col">
+    <div class="box"><div class="box-title">Инициатива</div><span class="big-num">+1</span> (+2 Alert)</div>
+  </div>
+</div>
+
+<table class="stats-table">
+  <tr><th>СИЛ</th><th>ЛОВ</th><th>ТЕЛ</th><th>ИНТ</th><th>МДР</th><th>ХАР</th></tr>
+  <tr><td>16 <span class="mod">(+3)</span></td><td>8 <span class="mod">(-1)</span></td><td>12 <span class="mod">(+1)</span></td><td>13 <span class="mod">(+1)</span></td><td>12 <span class="mod">(+1)</span></td><td>15 <span class="mod">(+2)</span></td></tr>
+</table>
+
+<div class="section-title">Атаки</div>
+<table class="attacks">
+  <tr><th>Оружие</th><th>Попадание</th><th>Урон</th><th>Примечание</th></tr>
+  <tr><td><strong>Длинный меч</strong></td><td>+5</td><td>1d8+3 рубящий</td><td>Sap — помеха след. атаке цели</td></tr>
+  <tr><td>Арбалет тяжёлый</td><td>+1</td><td>1d10-1 колющий</td><td>Push — отталкивание 10 фт</td></tr>
+  <tr><td>Копьё ×6</td><td>+5</td><td>1d6+3 колющий</td><td>Метательное</td></tr>
+  <tr><td>Sacred Flame (заговор)</td><td>ЛОВ DC 12</td><td>1d8 сияющий</td><td>60 фт</td></tr>
+</table>
+
+<div class="section-title">Ячейки заклинаний: 2 × 1-й уровень</div>
+<table class="attacks">
+  <tr><th>Заклинание</th><th>Время</th><th>Эффект</th></tr>
+  <tr><td><strong>Divine Smite</strong></td><td>1BA</td><td>+2d8 сияющий к атаке (1/длинный бесплатно)</td></tr>
+</table>
+<ul>
+  <li><strong>Заговоры:</strong> Sacred Flame, Guidance</li>
+</ul>
+
+<div class="section-title">Способности</div>
+<ul>
+  <li><strong>Возложение рук:</strong> пул 10 HP / длинный отдых. Исцеление = бонусное действие, касание</li>
+  <li><strong>Очищение яда:</strong> 5 HP из пула → снимает отравление!</li>
+  <li><strong>Alert:</strong> +2 инициатива, обмен инициативой с союзником</li>
+  <li><strong>Находчивость:</strong> Героическое вдохновение после длинного отдыха</li>
+</ul>
+
+<div class="important">
+  <strong>Ключ для Акта 2:</strong> Очищение яда (Lay On Hands, 5 HP из пула) снимает отравление с игроков и NPC!
+</div>
+
+<div class="section-title">Навыки (владение)</div>
+<ul>
+  <li>Атлетика +5, Убеждение +4, История +3, Религия +3</li>
+  <li><strong>Спасброски:</strong> МДР +3, ХАР +4</li>
+</ul>
+
+</div>
+</body>
+</html>

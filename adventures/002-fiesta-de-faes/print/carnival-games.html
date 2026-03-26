@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Фиеста де Фаэс — Ярмарочные игры</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10pt; line-height: 1.3; color: #222; }
+  h1 { font-size: 14pt; text-align: center; margin-bottom: 6px; border-bottom: 2px solid #333; padding-bottom: 3px; }
+  .game { border: 1.5px solid #333; padding: 6px 8px; margin-bottom: 8px; }
+  .game-title { font-size: 12pt; font-weight: bold; margin-bottom: 4px; }
+  .game-meta { font-size: 9pt; color: #666; margin-bottom: 4px; }
+  .mechanic { font-size: 9pt; background: #f5f5f5; padding: 3px 6px; margin: 3px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 4px 0; font-size: 9pt; }
+  td, th { border: 1px solid #ccc; padding: 4px 5px; height: 24px; }
+  th { background: #eee; text-align: left; }
+  .result-row td:last-child { width: 60px; }
+  .checkbox { display: inline-block; width: 12px; height: 12px; border: 1.5px solid #333; margin-right: 4px; vertical-align: middle; }
+  .pair-label { font-size: 11pt; font-weight: bold; background: #f5a623; color: #fff; padding: 2px 8px; margin-top: 10px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Ярмарочные игры — Трекер DM</h1>
+
+<div class="pair-label">Пара 1</div>
+
+<div class="game">
+  <div class="game-title">🥧 Поедание пирогов</div>
+  <div class="game-meta">1 зм | ТЕЛ | 5 билетов победителю</div>
+  <div class="mechanic">Каждый раунд: ТЕЛ DC 5 (+2 за каждый съеденный). Провал = вылет. При успехе — d12 на магический эффект.</div>
+  <table>
+    <tr><th>d12</th><th>Эффект</th></tr>
+    <tr><td>1–6</td><td>Без эффекта</td></tr>
+    <tr><td>7</td><td>Магическая икота, +1 DC</td></tr>
+    <tr><td>8</td><td>Острая начинка, пот, +1 DC</td></tr>
+    <tr><td>9</td><td>Уменьшение на фут, +2 DC</td></tr>
+    <tr><td>10</td><td>Черви в пироге (галлюцинация), +3 DC</td></tr>
+    <tr><td>11</td><td>Превращение в животное (d4: крыса/собака/лошадь/курица) 1 раунд</td></tr>
+    <tr><td>12</td><td>Вкус навоза, помеха на след. бросок</td></tr>
+  </table>
+  <table>
+    <tr><th>Участник</th><th>Р1</th><th>Р2</th><th>Р3</th><th>Р4</th><th>Р5</th><th>Р6</th><th>d12</th><th>Итог</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>NPC 1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="game">
+  <div class="game-title">🛁 Бак для купания</div>
+  <div class="game-meta">1 зм | ЛОВ DC 20 | 1 билет за попадание, макс 3</div>
+  <div class="mechanic">3 попытки. Бросок Ловкости: 20+ = попадание, сброс в бак.</div>
+  <table>
+    <tr><th>Игрок</th><th>Бросок 1</th><th>Бросок 2</th><th>Бросок 3</th><th>Билетов</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="pair-label">Пара 2</div>
+
+<div class="game">
+  <div class="game-title">🎯 Игра в напёрстки</div>
+  <div class="game-meta">1 зм | МДР (Восприятие) | 3 билета (или 6)</div>
+  <div class="mechanic">3 раунда: DC 10 → DC 12 → DC 15. Если все 3 пройдены — 4-й раунд: Пепито жульничает, DC 17 чтобы заметить.</div>
+  <table>
+    <tr><th>Игрок</th><th>Р1 (DC10)</th><th>Р2 (DC12)</th><th>Р3 (DC15)</th><th>Р4 (DC17)</th><th>Билетов</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="game">
+  <div class="game-title">💪 Армрестлинг</div>
+  <div class="game-meta">2 зм | СИЛ (состязание) | 2 билета</div>
+  <div class="mechanic">Состязательные броски СИЛ. Больший результат = +1 зарубка. 3 зарубки = победа. Нат. 20 = +2 зарубки, нат. 1 = −2.</div>
+  <table>
+    <tr><th>Игрок vs NPC</th><th>Р1</th><th>Р2</th><th>Р3</th><th>Р4</th><th>Р5</th><th>Счёт</th><th>Итог</th></tr>
+    <tr><td>______ vs ______</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>______ vs ______</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>______ vs ______</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="pair-label">Пара 3</div>
+
+<div class="game">
+  <div class="game-title">🔗 Кольцеброс</div>
+  <div class="game-meta">2 зм | ЛОВ | 1–5 билетов</div>
+  <div class="mechanic">5 колец. 1–10: промах. 11–13: ряд 1 (1 очко). 14–16: ряд 2 (2). 17–19: ряд 3 (3). Нат. 20: золотая (6). Итого: 0=0б, 1–5=1б, 6–9=2б, 10–12=3б, 13–15=4б, 16+=5б.</div>
+  <table>
+    <tr><th>Игрок</th><th>К1</th><th>К2</th><th>К3</th><th>К4</th><th>К5</th><th>Очков</th><th>Билетов</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="game">
+  <div class="game-title">🎲 Угадай число</div>
+  <div class="game-meta">1 зм | d6 (стратегия) | 2 билета</div>
+  <div class="mechanic">Пепито бросает 2d12 = цель. Каждый бросает d6 до 6 раз. Ближайший к цели без перебора — победа.</div>
+  <table>
+    <tr><th colspan="8">Цель (2d12): ______</th></tr>
+    <tr><th>Участник</th><th>d6 #1</th><th>d6 #2</th><th>d6 #3</th><th>d6 #4</th><th>d6 #5</th><th>d6 #6</th><th>Σ</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>NPC 1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="pair-label">Пара 4</div>
+
+<div class="game">
+  <div class="game-title">🐉 Гонки псевдодраконов</div>
+  <div class="game-meta">1–3 зм ставка | d4 ×3 | ×2 билетов</div>
+  <div class="mechanic">4 дракона: красный, зелёный, белый, синий. DM бросает d4 три раза за каждого. Макс. сумма = победитель.</div>
+  <table>
+    <tr><th>Дракон</th><th>Забег 1</th><th>Забег 2</th><th>Забег 3</th><th>Σ</th></tr>
+    <tr><td>🔴 Красный</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>🟢 Зелёный</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>⚪ Белый</td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>🔵 Синий</td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <table>
+    <tr><th>Игрок</th><th>Ставка (зм)</th><th>На кого</th><th>Выигрыш (билеты)</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div class="game">
+  <div class="game-title">🔨 Силомер</div>
+  <div class="game-meta">1 зм | СИЛ DC 18 | 2 билета</div>
+  <div class="mechanic">3 попытки. Бросок Силы: 18+ = победа.</div>
+  <table>
+    <tr><th>Игрок</th><th>Бросок 1</th><th>Бросок 2</th><th>Бросок 3</th><th>Победа?</th><th>Билетов</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+</div>
+
+<div style="margin-top: 12px; border: 2px solid #333; padding: 6px;">
+  <strong>Итого билетов:</strong>
+  <table>
+    <tr><th>Игрок</th><th>Игра 1</th><th>Игра 2</th><th>Игра 3</th><th>Игра 4</th><th>Σ билетов</th><th>+5 от Пепито</th><th>ВСЕГО</th></tr>
+    <tr><td>Лоран</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td></td></tr>
+    <tr><td>Сафира</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td></td></tr>
+    <tr><td>Орущие</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td></td></tr>
+    <tr><td>FominFin</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td></td></tr>
+    <tr><td>Нитра</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td></td></tr>
+  </table>
+</div>
+
+</body>
+</html>
