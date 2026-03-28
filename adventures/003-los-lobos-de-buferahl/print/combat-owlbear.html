@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Бой: Совобир</title>
+<style>
+  @page { margin: 1.2cm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10pt; line-height: 1.35; color: #222; }
+  h1 { font-size: 15pt; text-align: center; margin-bottom: 6px; border-bottom: 2px solid #333; padding-bottom: 3px; }
+  h3 { font-size: 10pt; margin-top: 8px; margin-bottom: 3px; border-bottom: 1px solid #999; }
+  table { border-collapse: collapse; width: 100%; margin: 4px 0; font-size: 9.5pt; }
+  td, th { border: 1px solid #999; padding: 3px 6px; }
+  th { background: #eee; text-align: left; }
+
+  .stat-block { border: 2px solid #333; padding: 8px 10px; margin-bottom: 8px; }
+  .stat-name { font-size: 13pt; font-weight: bold; display: inline; }
+  .stat-type { font-size: 9pt; font-style: italic; color: #666; display: inline; margin-left: 6px; }
+  .stat-line { font-size: 10pt; margin: 2px 0; }
+  .stats-grid { display: flex; margin: 4px 0; }
+  .stats-grid .cell { flex: 1; text-align: center; border: 1px solid #999; padding: 2px 4px; }
+  .stats-grid .cell .label { font-weight: bold; font-size: 8pt; color: #666; }
+  .stats-grid .cell .val { font-size: 11pt; font-weight: bold; }
+  .action { margin: 2px 0; font-size: 10pt; }
+  .action-name { font-weight: bold; font-style: italic; }
+  .note { font-size: 9pt; color: #d0021b; font-style: italic; margin-top: 3px; }
+
+  .init-table td { height: 28px; }
+  .init-table td:nth-child(1) { width: 30px; text-align: center; }
+  .init-table td:nth-child(3) { width: 50px; }
+  .init-table td:nth-child(4) { width: 70px; }
+</style>
+</head>
+<body>
+
+<h1>Бой: Совобир (Акт 3, опционально)</h1>
+
+<p style="font-size: 9pt; margin-bottom: 6px;">Easy-Medium (~700 XP). Совобир ранен волками, голоден, в отчаянии. Не отступает. Волк-наблюдатель сидит на холме и смотрит (+1 доверия если бой чистый).</p>
+
+<div class="stat-block">
+  <div><span class="stat-name">Совобир (ослабленный)</span><span class="stat-type">Большой монстр, нейтральный — CR 3 (700 XP)</span></div>
+  <div class="stats-grid">
+    <div class="cell"><div class="label">СИЛ</div><div class="val">20(+5)</div></div>
+    <div class="cell"><div class="label">ЛОВ</div><div class="val">12(+1)</div></div>
+    <div class="cell"><div class="label">ТЕЛ</div><div class="val">17(+3)</div></div>
+    <div class="cell"><div class="label">ИНТ</div><div class="val">3(-4)</div></div>
+    <div class="cell"><div class="label">МДР</div><div class="val">12(+1)</div></div>
+    <div class="cell"><div class="label">ХАР</div><div class="val">7(-2)</div></div>
+  </div>
+  <div class="stat-line"><b>AC:</b> 13 &nbsp;|&nbsp; <b>HP:</b> 40 (снижены с 59) &nbsp;|&nbsp; <b>Скорость:</b> 40 фт &nbsp;|&nbsp; <b>Тёмнозрение:</b> 60 фт</div>
+  <div class="action"><span class="action-name">Острое зрение и обоняние.</span> Преимущество на Perception (зрение/обоняние).</div>
+  <div class="action"><span class="action-name">Мультиатака.</span> Одна атака клювом + одна когтями.</div>
+  <div class="action"><span class="action-name">Клюв.</span> +7, досяг. 5 фт. <b>10 (1d10+5) колющего.</b></div>
+  <div class="action"><span class="action-name">Когти.</span> +7, досяг. 5 фт. <b>14 (2d8+5) рубящего.</b></div>
+  <div class="note">Мультиатака = ~24 урона/раунд — может уложить волшебника (HP 14) за один ход!
+    <br>Бросается на самую лёгкую цель (заклинатели, безбронные). Не отступает — бой насмерть.
+    <br>На шкуре — следы укусов (волки) и ожогов (Пламя). Nature DC 12 после боя.</div>
+</div>
+
+<h3>Инициатива</h3>
+<table class="init-table">
+  <tr><th>#</th><th>Существо</th><th>Иниц.</th><th>HP</th><th>Состояние / Заметки</th></tr>
+  <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>4</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>5</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>6</td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+</body>
+</html>

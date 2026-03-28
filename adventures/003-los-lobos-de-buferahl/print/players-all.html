@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Все игроки — Los Lobos de Buferahl</title>
+<style>
+  @page { margin: 1cm 1.2cm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5pt; line-height: 1.25; color: #222; }
+  .player { border: 2px solid #333; padding: 5px 8px; margin-bottom: 4px; }
+  .name { font-size: 13pt; font-weight: bold; display: inline; }
+  .meta { font-size: 8pt; color: #666; display: inline; margin-left: 8px; }
+  .top-row { display: flex; gap: 6px; margin: 2px 0; align-items: center; }
+  .stat-box { border: 1px solid #999; padding: 2px 6px; text-align: center; font-size: 9pt; }
+  .stat-box .label { font-size: 7pt; color: #666; font-weight: bold; }
+  .stat-box .val { font-size: 12pt; font-weight: bold; }
+  .stats-row { display: flex; gap: 0; margin: 3px 0; }
+  .stats-row .cell { flex: 1; text-align: center; border: 1px solid #bbb; padding: 1px 2px; }
+  .stats-row .cell .l { font-size: 7pt; font-weight: bold; color: #666; }
+  .stats-row .cell .v { font-size: 9pt; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; font-size: 8pt; margin: 2px 0; }
+  td, th { border: 1px solid #ccc; padding: 1px 4px; }
+  th { background: #eee; text-align: left; }
+  ul { margin: 0 0 0 12px; font-size: 8pt; }
+  li { margin: 0; }
+  .key { background: #fff3e0; border: 1px solid #f5a623; padding: 1px 4px; font-size: 8pt; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<!-- ПЕДРО -->
+<div class="player">
+  <div><span class="name">Педро</span><span class="meta">Владимир / @kayfatiko — Человек — Воин 3 (Чемпион)</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">16</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">27</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+0 (П)</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">17(+3)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">10(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Длинный меч</td><td>+5</td><td>1d8+3 рубящ.</td><td>Sap (помеха на атаку цели)</td></tr>
+    <tr><td>Булава</td><td>+5</td><td>1d6+3 дробящ.</td><td>Sap</td></tr>
+    <tr><td>Усил. безоружный</td><td>+5</td><td>1d4+3 дробящ.</td><td>Push (толкнуть 5 фт)</td></tr>
+  </table>
+  <ul>
+    <li><b>Improved Critical</b> (крит 19-20) | <b>Action Surge</b> 1/кор. | <b>Second Wind</b> 2/длин. (1d10+3 HP)</li>
+    <li><b>Remarkable Athlete:</b> преимущество на инициативу и Атлетику | <b>Blind Fighting:</b> слепозрение 10 фт</li>
+    <li><b>Спасброски:</b> СИЛ +5, ТЕЛ +4 | <b>Навыки:</b> Атлетика +5, Медицина +4, Восприятие +4</li>
+  </ul>
+  <div class="key">Танк. Кольчуга + щит. 2 зелья лечения. Кухонная утварь. Языки: Общий, Жестовый, Полуросличий</div>
+</div>
+
+<!-- MORRIGAN -->
+<div class="player">
+  <div><span class="name">Morrigan</span><span class="meta">Mias / @MiasLan — Аасимар — Жрец 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">18</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">17</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+2</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">17(+3)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">9(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие/Заклинание</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Цеп</td><td>+1</td><td>1d8-1 дробящ.</td><td></td></tr>
+    <tr><td>Toll the Dead</td><td>МДР DC13</td><td>1d8 некрот.</td><td>1d12 если ранен</td></tr>
+    <tr><td>Sacred Flame</td><td>ЛОВ DC13</td><td>1d8 лучист.</td><td></td></tr>
+    <tr><td>Guiding Bolt</td><td>+5</td><td>4d6 лучист.</td><td>Ячейка 1ур., преим. след. атаки</td></tr>
+  </table>
+  <ul>
+    <li><b>Заклинания (МДР, DC 13, +5):</b> 3 ячейки 1-го ур. | <b>Заговоры:</b> Toll the Dead, Guidance, Sacred Flame, True Strike, Mage Hand, Light</li>
+    <li><b>1-й уровень:</b> Bless, Command, Cure Wounds, Guiding Bolt, Healing Word, Bane, Shield (1/длин., Magic Initiate)</li>
+    <li><b>Божественный канал</b> 2/длин. (Божественная искра, Изгнание нежити) | <b>Целительные руки</b> 2d4 1/длин.</li>
+    <li><b>Резист:</b> некротический, лучистый | <b>Тёмнозрение</b> 60 фт</li>
+  </ul>
+  <div class="key">Целитель + саппорт. Чешуя + щит. Была в Буферале в 001 — знает Хаке. Языки: Общий</div>
+</div>
+
+<!-- THEPETERBLACK -->
+<div class="player">
+  <div><span class="name">ThePeterBlack</span><span class="meta">Peter Tovanov / @peterblack — Эльф (Высший) — Волшебник 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">14</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+3</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">17(+3)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">8(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие/Заклинание</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Fire Bolt</td><td>+5</td><td>1d10 огнём</td><td>120 фт</td></tr>
+    <tr><td>Ray of Frost</td><td>+5</td><td>1d8 холод</td><td>60 фт, -10 фт скорости</td></tr>
+    <tr><td>Shocking Grasp</td><td>+5</td><td>1d8 электр.</td><td>Касание, нет реакции</td></tr>
+    <tr><td>Magic Missile</td><td>авто</td><td>3×(1d4+1) силовой</td><td>Ячейка 1 ур., 120 фт</td></tr>
+  </table>
+  <ul>
+    <li><b>Заклинания (ИНТ, DC 13, +5):</b> 3 ячейки 1-го ур. | <b>Заговоры:</b> Mage Hand, Ray of Frost, Shocking Grasp, Fire Bolt</li>
+    <li><b>1-й уровень:</b> Alarm, Color Spray, Find Familiar, Shield, Ray of Sickness, Fog Cloud, Ice Knife, Jump, Magic Missile, Sleep, Thunderwave, Mage Armor</li>
+    <li><b>Arcane Recovery</b> 1/длин. (восст. 1 ячейку на кор.) | <b>Shield</b> (+5 AC реакцией) | <b>Mage Armor</b> (AC→16)</li>
+    <li><b>Иммунитет:</b> магический сон | <b>Преим.:</b> против Очарования | <b>Тёмнозрение</b> 60 фт | <b>Trance</b> (4ч отдых)</li>
+  </ul>
+  <div class="key">Стеклянная пушка (AC 13 / 16 с Mage Armor / 18+5 с Shield). 300 лет, хаотично-злой. Языки: Общий, Драконий, Гоблинский, Подземный</div>
+</div>
+
+<!-- ГРАКХ -->
+<div class="player">
+  <div><span class="name">Гракх</span><span class="meta">Константин / @KonstantinRst — Орк — Монах 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">14</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">19</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">40</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+4</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">15(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">9(-1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">15(+2)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">8(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Безоружный удар</td><td>+4</td><td>1d6+2 дробящ.</td><td>Основная атака</td></tr>
+    <tr><td>Шквал ударов</td><td>+4</td><td>1d6+2 дробящ.</td><td>BA за 1 ОФ</td></tr>
+    <tr><td>Кинжал ×7</td><td>+4</td><td>1d4+2 колющ.</td><td>Метательный 20/60</td></tr>
+    <tr><td>Копьё</td><td>+4</td><td>1d6+2 колющ.</td><td>Метательное 20/60</td></tr>
+  </table>
+  <ul>
+    <li><b>Очки фокуса: 2</b> (Шквал ударов / Терпеливая оборона / Шаг ветра)</li>
+    <li><b>Адреналиновый рывок</b> 2/кор. (BA: Рывок + 2 врем. HP) | <b>Несгибаемая стойкость</b> 1/длин. (0 HP → 1 HP)</li>
+    <li><b>Alert:</b> +2 иниц., обмен иниц. с союзником | <b>Тёмнозрение</b> 120 фт</li>
+  </ul>
+  <div class="key">Мобильный боец. Был в Буферале в 001 — знает Хаке. Бывший убийца "Жнец". Языки: Общий, Гоблинский, Орочий</div>
+</div>
+
+<!-- RICO GRIN -->
+<div class="player">
+  <div><span class="name">Rico Grin</span><span class="meta">LeonidSmith — Тифлинг — Плут 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">14</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">17</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+5</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">15(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">14(+2)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Короткий меч</td><td>+5</td><td>1d6+3 колющ.</td><td>Фехтовальное, лёгкое</td></tr>
+    <tr><td>Кинжал (Nick)</td><td>+5</td><td>1d4+3 колющ.</td><td>Метательный 20/60, доп. атака</td></tr>
+    <tr><td>Короткий лук (Vex)</td><td>+5</td><td>1d6+3 колющ.</td><td>80/320, преим. след. атаки</td></tr>
+    <tr><td>Fire Bolt</td><td>+4</td><td>1d10 огнём</td><td>120 фт, кантрип (ХАР)</td></tr>
+  </table>
+  <ul>
+    <li><b>Скрытая атака +1d6</b> (преимущество или союзник рядом) | <b>Хитрое действие</b> (BA: Рывок/Отход/Прятки)</li>
+    <li><b>Экспертиза:</b> Ловкость рук +7, Скрытность +7 | <b>Weapon Mastery:</b> Rapier (Vex), Shortbow (Vex)</li>
+    <li><b>Alert:</b> +2 иниц., обмен иниц. с союзником | <b>Резист:</b> огонь | <b>Тёмнозрение</b> 60 фт</li>
+    <li><b>Кантрипы:</b> Fire Bolt (+4), Thaumaturgy | Воровские инструменты ×2, набор маскировки</li>
+  </ul>
+  <div class="key">Разведчик + DPS. Лучшая инициатива в партии. Резист к огню (Пламя!). Языки: Общий, Жестовый, Эльфийский, Гоблинский, Воровской жаргон</div>
+</div>
+
+</body>
+</html>

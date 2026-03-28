@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Бой: Логово волков</title>
+<style>
+  @page { margin: 1cm 1.2cm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9.5pt; line-height: 1.3; color: #222; }
+  h1 { font-size: 14pt; text-align: center; margin-bottom: 4px; border-bottom: 2px solid #333; padding-bottom: 3px; }
+  h2 { font-size: 11pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 8px; margin-bottom: 3px; }
+  h3 { font-size: 10pt; margin-top: 6px; margin-bottom: 2px; border-bottom: 1px solid #999; }
+  table { border-collapse: collapse; width: 100%; margin: 3px 0; font-size: 9pt; }
+  td, th { border: 1px solid #999; padding: 2px 5px; }
+  th { background: #eee; text-align: left; }
+
+  .stat-block { border: 2px solid #333; padding: 5px 7px; margin-bottom: 5px; }
+  .stat-name { font-size: 11pt; font-weight: bold; display: inline; }
+  .stat-type { font-size: 8.5pt; font-style: italic; color: #666; display: inline; margin-left: 6px; }
+  .stat-line { font-size: 9pt; margin: 1px 0; }
+  .stats-grid { display: flex; margin: 3px 0; }
+  .stats-grid .cell { flex: 1; text-align: center; border: 1px solid #999; padding: 1px 3px; }
+  .stats-grid .cell .label { font-weight: bold; font-size: 7.5pt; color: #666; }
+  .stats-grid .cell .val { font-size: 10pt; font-weight: bold; }
+  .action { margin: 1px 0; font-size: 9pt; }
+  .action-name { font-weight: bold; font-style: italic; }
+  .note { font-size: 8.5pt; color: #d0021b; font-style: italic; margin-top: 2px; }
+
+  .init-table td { height: 22px; }
+  .init-table td:nth-child(1) { width: 25px; text-align: center; }
+  .init-table td:nth-child(3) { width: 40px; }
+  .init-table td:nth-child(4) { width: 55px; }
+
+  .page-break { page-break-before: always; }
+
+  .phase { background: #fff3e0; border: 1px solid #f5a623; padding: 3px 6px; font-size: 8.5pt; margin: 4px 0; }
+</style>
+</head>
+<body>
+
+<h1>Бой: Логово волков (Акт 4)</h1>
+
+<div class="phase">
+  <b>Часть 1:</b> 6 обычных волков (снаружи) → через 1 раунд: Пламя + Молния + 4 в броне (из пещеры).
+  <b>Прерывается</b> когда: убиты 4 волка / альфа ниже ½ HP / игрок на 0 HP → Молния останавливает бой.
+</div>
+<div class="phase">
+  <b>Часть 2 (предательство):</b> Пламя нападает на Молнию сзади. Молния на 1 HP, вне боя.
+  Пламя + 4 волка в броне vs партия. Остальные волки в шоке, не участвуют.
+</div>
+
+<h3>Инициатива</h3>
+<table class="init-table">
+  <tr><th>#</th><th>Существо</th><th>Иниц.</th><th>HP</th><th>Состояние / Заметки</th></tr>
+  <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>4</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>5</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>6</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>7</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>8</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>9</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>10</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>11</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>12</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>13</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>14</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>15</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>16</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>17</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>18</td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h3>HP-трекер волков</h3>
+<table>
+  <tr><th>Волк</th><th>AC</th><th>Max HP</th><th>Текущие HP</th><th>Статус</th></tr>
+  <tr><td><b>Пламя</b> (альфа)</td><td>14</td><td>47</td><td></td><td></td></tr>
+  <tr><td><b>Молния</b> (альфа)</td><td>14</td><td>47</td><td></td><td></td></tr>
+  <tr><td>Волк в броне 1</td><td>14</td><td>16</td><td></td><td></td></tr>
+  <tr><td>Волк в броне 2</td><td>14</td><td>16</td><td></td><td></td></tr>
+  <tr><td>Волк в броне 3</td><td>14</td><td>16</td><td></td><td></td></tr>
+  <tr><td>Волк в броне 4</td><td>14</td><td>16</td><td></td><td></td></tr>
+  <tr><td>Волк 1</td><td>13</td><td>11</td><td></td><td></td></tr>
+  <tr><td>Волк 2</td><td>13</td><td>11</td><td></td><td></td></tr>
+  <tr><td>Волк 3</td><td>13</td><td>11</td><td></td><td></td></tr>
+  <tr><td>Волк 4</td><td>13</td><td>11</td><td></td><td></td></tr>
+  <tr><td>Волк 5</td><td>13</td><td>11</td><td></td><td></td></tr>
+  <tr><td>Волк 6</td><td>13</td><td>11</td><td></td><td></td></tr>
+</table>
+
+<h3>Статблоки</h3>
+
+<div style="display: flex; gap: 6px;">
+  <div class="stat-block" style="flex: 1;">
+    <div><span class="stat-name">Волк</span><span class="stat-type">CR 1/4</span></div>
+    <div class="stat-line"><b>AC:</b> 13 / <b>14</b> (броня) | <b>HP:</b> 11 / <b>16</b> (броня) | <b>Скор.:</b> 40 фт</div>
+    <div class="action"><span class="action-name">Тактика стаи.</span> Преим. на атаку если союзник в 5 фт.</div>
+    <div class="action"><span class="action-name">Укус.</span> +4, <b>7 (2d4+2) колющ.</b> СИЛ DC 11 или сбит.</div>
+  </div>
+  <div class="stat-block" style="flex: 1;">
+    <div><span class="stat-name">Альфа</span><span class="stat-type">CR 2</span></div>
+    <div class="stat-line"><b>AC:</b> 14 | <b>HP:</b> 47 | <b>Скор.:</b> 50 фт</div>
+    <div class="action"><span class="action-name">Дыхание (5-6).</span> Пламя: конус 15фт огонь / Молния: линия 30фт электр. ЛОВ DC 13, <b>9 (2d8)</b>.</div>
+    <div class="action"><span class="action-name">Укус.</span> +5, <b>7 (1d6+3) колющ.</b> СИЛ DC 13 или сбит.</div>
+  </div>
+</div>
+
+<h3>Тактика</h3>
+<table style="font-size: 8.5pt;">
+  <tr><th style="width:22%">Фаза</th><th>Что происходит</th></tr>
+  <tr><td><b>Раунд 1</b></td><td>6 обычных атакуют. Pack Tactics, фланкируют магов (ThePeterBlack AC 13, Rico AC 14)</td></tr>
+  <tr><td><b>Раунд 2</b></td><td>Из пещеры: Пламя + Молния + 4 в броне. «Убейте охотников!» / «Защитите щенков!»</td></tr>
+  <tr><td><b>Стоп</b></td><td>Убиты 4 волка / альфа &lt;½ HP / игрок 0 HP → Молния: рёв, все замирают</td></tr>
+  <tr><td><b>Предательство</b></td><td>Пламя → Молнию сзади (1 HP). 4 бронир. с Пламенем. Остальные в шоке</td></tr>
+  <tr><td><b>Финал</b></td><td>Пламя + 4 бронир. Безрассудная. Лёгкий? → дыхание 4-6. Тяжёлый? → -1-2 волка</td></tr>
+</table>
+
+</body>
+</html>
