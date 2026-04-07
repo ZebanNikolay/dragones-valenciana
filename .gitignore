@@ -1,3 +1,4 @@
 .DS_Store
 players/
 raw/
+*.tar.gz
