@@ -12,6 +12,9 @@
     - [Приключение](adventures/003-los-lobos-de-buferahl/los-lobos-de-buferahl.md)
     - [Анонс](adventures/003-los-lobos-de-buferahl/announcement-los-lobos.md)
     - [Оригинал: Wolves of Welton (RU)](adventures/003-los-lobos-de-buferahl/raw/wolves-of-welton-ru.md)
+  - **004 — Centinelas del Abismo** *(подготовка)*
+    - [Приключение](adventures/004-centinelas-del-abismo/centinelas-del-abismo.md)
+    - [Оригинал: Seven Samurai Bloomfield (RU)](adventures/004-centinelas-del-abismo/raw/bloomfield-seven-samurai-ru.md)
 
 - **Персонажи**
   - [Энрико Штрудендо](characters/enrico-strudendo-chef.md)
