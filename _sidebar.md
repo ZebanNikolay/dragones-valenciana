@@ -29,6 +29,7 @@
   - [El Toro Bien Hecho](locations/el-toro-bien-hecho-restaurant.md)
   - [Деревня и озеро Буфераль](locations/lake-buferal-village.md)
   - [Баррио Корреос](locations/barrio-correos.md)
+  - [Гарнизон на Великом Разломе](locations/garrison-gran-abismo.md)
 
 - **Организации**
   - [Орден Священного Пламени](organizations/orden-sacred-flame.md)
