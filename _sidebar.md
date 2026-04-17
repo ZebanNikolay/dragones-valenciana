@@ -12,9 +12,10 @@
     - [Приключение](adventures/003-los-lobos-de-buferahl/los-lobos-de-buferahl.md)
     - [Анонс](adventures/003-los-lobos-de-buferahl/announcement-los-lobos.md)
     - [Оригинал: Wolves of Welton (RU)](adventures/003-los-lobos-de-buferahl/raw/wolves-of-welton-ru.md)
-  - **004 — Centinelas del Abismo** *(подготовка)*
-    - [Приключение](adventures/004-centinelas-del-abismo/centinelas-del-abismo.md)
-    - [Оригинал: Seven Samurai Bloomfield (RU)](adventures/004-centinelas-del-abismo/raw/bloomfield-seven-samurai-ru.md)
+  - **004 — Guardianes del Ombligo del Abismo** *(подготовка)*
+    - [Приключение](adventures/004-guardianes-del-ombligo/guardianes-del-ombligo.md)
+    - [Анонс](adventures/004-guardianes-del-ombligo/announcement-guardianes.md)
+    - [Оригинал: Seven Samurai Bloomfield (RU)](adventures/004-guardianes-del-ombligo/raw/bloomfield-seven-samurai-ru.md)
 
 - **Персонажи**
   - [Энрико Штрудендо](characters/enrico-strudendo-chef.md)
@@ -24,12 +25,13 @@
   - [Хаке Горрион](characters/boatman-buferalь.md)
   - [Гардж Громодеро](characters/gardzh-gromodero.md)
   - [Мерседес Акеро](characters/mercedes-acero.md)
+  - [Лусио Кальвейра](characters/lucio-calveira.md)
 
 - **Локации**
   - [El Toro Bien Hecho](locations/el-toro-bien-hecho-restaurant.md)
   - [Деревня и озеро Буфераль](locations/lake-buferal-village.md)
   - [Баррио Корреос](locations/barrio-correos.md)
-  - [Гарнизон на Великом Разломе](locations/garrison-gran-abismo.md)
+  - [El Ombligo del Abismo](locations/garrison-gran-abismo.md)
 
 - **Организации**
   - [Орден Священного Пламени](organizations/orden-sacred-flame.md)
@@ -44,3 +46,4 @@
 
 - **Мир**
   - [Хоумбрю правила](homebrew.md)
+  - [Арт-стиль (промпт)](dnd-art-style-prompt.md)
