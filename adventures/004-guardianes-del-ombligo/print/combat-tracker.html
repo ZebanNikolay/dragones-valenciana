@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Combat Tracker — Guardianes del Ombligo del Abismo</title>
+<style>
+  @page { margin: 8mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.3; color: #222; }
+  h1 { font-size: 12pt; text-align: center; margin-bottom: 3px; border-bottom: 2px solid #333; padding-bottom: 2px; }
+  h2 { font-size: 10pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 6px; margin-bottom: 3px; }
+  h3 { font-size: 9pt; margin-top: 4px; margin-bottom: 2px; border-bottom: 1px solid #999; }
+  table { border-collapse: collapse; width: 100%; margin: 2px 0; font-size: 8pt; }
+  td, th { border: 1px solid #999; padding: 2px 4px; }
+  th { background: #eee; text-align: left; }
+  .init-table td { height: 22px; }
+  .init-table td:nth-child(1) { width: 20px; text-align: center; }
+  .hp-track { font-family: monospace; font-size: 8pt; letter-spacing: 1px; }
+  .phase { background: #fff3e0; border: 1px solid #f5a623; padding: 3px 6px; font-size: 8pt; margin: 3px 0; }
+  .obj { background: #fff8e1; border: 1px solid #f57f17; padding: 2px 5px; font-size: 8pt; margin: 2px 0; }
+</style>
+</head>
+<body>
+
+<h1>Combat Tracker</h1>
+
+<h3>Инициатива (общая для всех фаз)</h3>
+<table class="init-table">
+  <tr><th>#</th><th>Кто</th><th>Иниц.</th><th>Заметки</th></tr>
+  <tr><td>1</td><td></td><td></td><td></td></tr>
+  <tr><td>2</td><td></td><td></td><td></td></tr>
+  <tr><td>3</td><td></td><td></td><td></td></tr>
+  <tr><td>4</td><td></td><td></td><td></td></tr>
+  <tr><td>5</td><td></td><td></td><td></td></tr>
+  <tr><td>6</td><td></td><td></td><td></td></tr>
+  <tr><td>7</td><td></td><td></td><td></td></tr>
+  <tr><td>8</td><td></td><td></td><td></td></tr>
+  <tr><td>9</td><td></td><td></td><td></td></tr>
+  <tr><td>10</td><td></td><td></td><td></td></tr>
+  <tr><td>11</td><td></td><td></td><td></td></tr>
+  <tr><td>12</td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>Защитники</h2>
+<table>
+  <tr><th>Кто</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td><b>Лусио</b></td><td><span class="hp-track">□□□□□ □□□□□ □</span> /11</td><td></td></tr>
+  <tr><td><b>Инес</b></td><td><span class="hp-track">□□□□□ □□□□□ □</span> /11</td><td></td></tr>
+  <tr><td><b>Рамон</b></td><td><span class="hp-track">□□□□□ □□□□□ □</span> /11</td><td></td></tr>
+  <tr><td><b>Горда Маноло</b></td><td><span class="hp-track">□□□□</span> /4</td><td></td></tr>
+  <tr><td><b>Пако</b></td><td><span class="hp-track">□□□□</span> /4</td><td></td></tr>
+  <tr><td><b>Чуло</b></td><td><span class="hp-track">□□□□</span> /4</td><td></td></tr>
+</table>
+
+<div class="obj"><b>Баррикада:</b> <span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□</span> /20</div>
+
+<h2>Фаза 1 — Штурм моста</h2>
+<div class="phase">Гоблины бегут + щит на колёсах (лестница или таран)</div>
+<table>
+  <tr><th>Кто</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td>Гоблин 1</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Гоблин 2</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Гоблин 3</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Гоблин 4</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Гоблин 5</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+</table>
+<div class="obj"><b>Щит на колёсах:</b> <span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□</span> /20</div>
+<table>
+  <tr><th>За щитом</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td>Гоблин А (щит)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Гоблин Б (щит)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Гоблин В (щит)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+</table>
+
+<h2>Фаза 2 — Катапульта + Бреши</h2>
+<div class="phase">Катапульта: 3 за залп, раз в 2 раунда. Бреши: 2-3 лезут снизу</div>
+<div class="obj"><b>Катапульта:</b> <span class="hp-track">□□□□□ □□□□□ □□□□□</span> /15</div>
+<table>
+  <tr><th>Залетевшие</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td>Залп 1 — А</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Залп 1 — Б</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Залп 1 — В</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Залп 2 — А</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Залп 2 — Б</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Залп 2 — В</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+</table>
+<table>
+  <tr><th>Бреши</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td>Снизу 1</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Снизу 2</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Снизу 3</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+</table>
+
+<h2>Фаза 3 — Паника + Босс</h2>
+<div class="phase">WIS DC 12 → Frightened. Босс → WIS DC 14</div>
+<table>
+  <tr><th>Кто</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td><b>Вожак (Bugbear Chief)</b></td><td><span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□</span> /65</td><td></td></tr>
+  <tr><td>Наездник 1</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Наездник 2</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+</table>
+<div class="obj"><b>Конструкция на спине:</b> <span class="hp-track">□□□□□ □□□□□</span> /10 — сломать → оба Prone</div>
+
+</body>
+</html>

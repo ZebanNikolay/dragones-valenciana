@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Все игроки — Guardianes del Ombligo del Abismo</title>
+<style>
+  @page { margin: 1cm 1.2cm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5pt; line-height: 1.25; color: #222; }
+  .player { border: 2px solid #333; padding: 5px 8px; margin-bottom: 4px; }
+  .name { font-size: 13pt; font-weight: bold; display: inline; }
+  .meta { font-size: 8pt; color: #666; display: inline; margin-left: 8px; }
+  .top-row { display: flex; gap: 6px; margin: 2px 0; align-items: center; }
+  .stat-box { border: 1px solid #999; padding: 2px 6px; text-align: center; font-size: 9pt; }
+  .stat-box .label { font-size: 7pt; color: #666; font-weight: bold; }
+  .stat-box .val { font-size: 12pt; font-weight: bold; }
+  .stats-row { display: flex; gap: 0; margin: 3px 0; }
+  .stats-row .cell { flex: 1; text-align: center; border: 1px solid #bbb; padding: 1px 2px; }
+  .stats-row .cell .l { font-size: 7pt; font-weight: bold; color: #666; }
+  .stats-row .cell .v { font-size: 9pt; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; font-size: 8pt; margin: 2px 0; }
+  td, th { border: 1px solid #ccc; padding: 1px 4px; }
+  th { background: #eee; text-align: left; }
+  ul { margin: 0 0 0 12px; font-size: 8pt; }
+  li { margin: 0; }
+  .key { background: #fff3e0; border: 1px solid #f5a623; padding: 1px 4px; font-size: 8pt; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<!-- ALFIR GA-NOR -->
+<div class="player">
+  <div><span class="name">Alfir Ga-Nor</span><span class="meta">Aleksandr Kharitonov / @line_of_sight_01 — Аасимар — Бард 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">11</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+2</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">16(+3)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие/Заклинание</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Rapier</td><td>+4</td><td>1d8+2 колющ.</td><td>Фехтовальное</td></tr>
+  </table>
+  <ul>
+    <li><b>Бардовское вдохновение</b> д6 × 2/длин. | <b>Целительные руки</b> 2д4 1/длин.</li>
+    <li><b>Ячейки 1-го ур.:</b> 2 | <b>Сл заклинаний:</b> DC 12, +4</li>
+  </ul>
+  <div class="key">Саппорт/фейс. Был в 001 (Paella Valenciana). Фермер. Языки: Общий</div>
+</div>
+
+<!-- ГРИН / NANASHI -->
+<div class="player">
+  <div><span class="name">Грин / Nanashi</span><span class="meta">Stan The Dragon / @MechanicalDragon — Человек — Следопыт 3</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">18</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+3</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">9(-1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">10(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Longbow</td><td>+5</td><td>1d8+3 колющ.</td><td>150/600, Slow (-10 фт скорости)</td></tr>
+    <tr><td>Scimitar</td><td>+5</td><td>1d6+3 рубящ.</td><td></td></tr>
+    <tr><td>Shortsword</td><td>+5</td><td>1d6+3 колющ.</td><td></td></tr>
+  </table>
+  <ul>
+    <li><b>Slow (Longbow):</b> при попадании -10 фт скорости цели | <b>Blindsight</b> 10 фт</li>
+    <li><b>Unarmed Strike:</b> Grapple или Shove</li>
+  </ul>
+  <div class="key">Рейнджер-стрелок. Longbow — основное оружие. Проводник. Языки: Общий, Драконий, Орочий, Жестовый</div>
+</div>
+
+<!-- ЭМБЕР -->
+<div class="player">
+  <div><span class="name">Эмбер</span><span class="meta">Li(ka) / @Serenhala — Драконорожденный — Плут 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">17</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">-3</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">16(+3)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Shortsword</td><td>+5</td><td>1d6+3 колющ.</td><td></td></tr>
+    <tr><td>Shortbow</td><td>+5</td><td>1d6+3 колющ.</td><td>80/320</td></tr>
+    <tr><td>Dagger (Nick)</td><td>+5</td><td>1d4+2 колющ.</td><td>BA доп. атака</td></tr>
+    <tr><td>Breath Weapon</td><td>DEX DC 12</td><td>1d10 огнём</td><td>Конус 15 фт или линия 30×5 фт</td></tr>
+  </table>
+  <ul>
+    <li><b>Скрытая атака +1d6</b> | <b>Хитрое действие</b> (BA: Рывок/Отход/Прятки)</li>
+    <li><b>Nick (Dagger):</b> доп. атака кинжалом бонусным действием | <b>Резист:</b> огонь | <b>Тёмнозрение</b> 60 фт</li>
+  </ul>
+  <div class="key">Плут-дракон. Огненное дыхание + скрытая атака. Странник. Языки: Общий, Драконий, Гоблинский, Воровской жаргон</div>
+</div>
+
+<!-- BODELLO -->
+<div class="player">
+  <div><span class="name">Bodello</span><span class="meta">BogdanTop / @bohdanko — Человек — Воин 2</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">16</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">22</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+4</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">17(+3)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">8(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Greatsword</td><td>+5</td><td>2d6+3 рубящ.</td><td>Heavy, Two-Handed, Graze</td></tr>
+    <tr><td>Flail</td><td>+5</td><td>1d8+3 дробящ.</td><td>Sap</td></tr>
+    <tr><td>Javelin</td><td>+5</td><td>1d6+3 колющ.</td><td>Thrown 30/120, Slow</td></tr>
+    <tr><td>Shortbow</td><td>+4</td><td>1d6+2 колющ.</td><td>80/320</td></tr>
+  </table>
+  <ul>
+    <li><b>Second Wind</b> 2/длин. (BA, 1d10+2 HP) | <b>Action Surge</b> 1/кор. (доп. действие)</li>
+    <li><b>Graze (Greatsword):</b> при промахе — урон = мод. СИЛ (+3) | <b>Slow (Javelin):</b> -10 фт скорости</li>
+  </ul>
+  <div class="key">Танк/DPS. Макс HP в партии. Солдат, сопровождал караваны у Разлома. Слабость: остро реагирует на предательство. Языки: Aglarondan, Общий, Turmic</div>
+</div>
+
+</body>
+</html>

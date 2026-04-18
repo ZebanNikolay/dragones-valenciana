@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Враги и NPC — Guardianes del Ombligo del Abismo</title>
+<style>
+  @page { margin: 8mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5pt; line-height: 1.25; color: #222; }
+  .block { border: 2px solid #333; padding: 5px 8px; margin-bottom: 4px; }
+  .block-enemy { border-color: #c62828; }
+  .block-ally { border-color: #2e7d32; }
+  .block-object { border-color: #f57f17; }
+  .name { font-size: 12pt; font-weight: bold; display: inline; }
+  .meta { font-size: 8pt; color: #666; display: inline; margin-left: 8px; }
+  .top-row { display: flex; gap: 6px; margin: 2px 0; align-items: center; }
+  .stat-box { border: 1px solid #999; padding: 2px 6px; text-align: center; font-size: 9pt; }
+  .stat-box .label { font-size: 7pt; color: #666; font-weight: bold; }
+  .stat-box .val { font-size: 12pt; font-weight: bold; }
+  .stats-row { display: flex; gap: 0; margin: 3px 0; }
+  .stats-row .cell { flex: 1; text-align: center; border: 1px solid #bbb; padding: 1px 2px; }
+  .stats-row .cell .l { font-size: 7pt; font-weight: bold; color: #666; }
+  .stats-row .cell .v { font-size: 9pt; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; font-size: 8pt; margin: 2px 0; }
+  td, th { border: 1px solid #ccc; padding: 1px 4px; }
+  th { background: #eee; text-align: left; }
+  ul { margin: 0 0 0 12px; font-size: 8pt; }
+  li { margin: 0; }
+  .key { padding: 1px 4px; font-size: 8pt; margin-top: 2px; }
+  .key-enemy { background: #ffebee; border: 1px solid #c62828; }
+  .key-ally { background: #e8f5e9; border: 1px solid #2e7d32; }
+  .key-object { background: #fff8e1; border: 1px solid #f57f17; }
+  h2 { font-size: 10pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 6px; margin-bottom: 3px; }
+</style>
+</head>
+<body>
+
+<h2>ВРАГИ</h2>
+
+<!-- ГОБЛИН -->
+<div class="block block-enemy">
+  <div><span class="name">Гоблин</span><span class="meta">Small Humanoid, Neutral Evil — дикарь пустоши, деформированный</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">7</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+2</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">8(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Scimitar</td><td>+4</td><td>1d6+2 рубящ.</td><td></td></tr>
+    <tr><td>Shortbow</td><td>+4</td><td>1d6+2 колющ.</td><td>80/320</td></tr>
+  </table>
+  <ul>
+    <li><b>Nimble Escape:</b> бонусным действием Disengage или Hide</li>
+    <li><b>Скрытность:</b> +6 | <b>Тёмнозрение</b> 60 фт</li>
+  </ul>
+  <div class="key key-enemy">Основной враг. Слабый, но быстрый. Умирает с одного-двух ударов. Dash = 60 ft за раунд. У стен: ломать баррикаду (+4 vs AC 10) или карабкаться (Athletics DC 12)</div>
+</div>
+
+<!-- BUGBEAR CHIEF -->
+<div class="block block-enemy">
+  <div><span class="name">Вожак клана — Bugbear Chief</span><span class="meta">Medium Humanoid — босс, с конструкцией на спине</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">17</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">65</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+0</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">17(+3)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">9(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Morningstar</td><td>+6</td><td>2d10+3 колющ.</td><td>Multiattack: 2 атаки</td></tr>
+    <tr><td>Javelin</td><td>+6</td><td>2d6+3 колющ.</td><td>30/120</td></tr>
+  </table>
+  <ul>
+    <li><b>Surprise Attack:</b> +2d6 урона при первом ударе по цели, которая ещё не ходила</li>
+    <li><b>Heart of Hruggek:</b> advantage на спасброски от Frightened</li>
+    <li><b>Brute:</b> дополнительный кубик урона уже включён в статблок</li>
+  </ul>
+  <div class="key key-enemy">Финальный босс. Два гоблина-наездника на спине (см. ниже). Конструкция: AC 12, HP 10 — сломать → оба наездника падают Prone</div>
+</div>
+
+<!-- ГОБЛИН-НАЕЗДНИК -->
+<div class="block block-enemy">
+  <div><span class="name">Гоблин-наездник</span><span class="meta">×2, сидят на спине вожака. Ноги не работают (мутации)</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">7</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">0</div></div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Дубина</td><td>+4</td><td>1d4+2 дробящ.</td><td>Ближний бой</td></tr>
+    <tr><td>Лёгкий арбалет</td><td>+4</td><td>1d8+2 колющ.</td><td>80/320</td></tr>
+  </table>
+  <div class="key key-enemy">Не могут ходить. Двигаются с вожаком. Стреляют из арбалетов пока далеко, бьют дубинами вблизи. Сбить: убить или сломать конструкцию</div>
+</div>
+
+<h2>ОБЪЕКТЫ</h2>
+
+<!-- ЩИТ НА КОЛЁСАХ -->
+<div class="block block-object">
+  <div><span class="name">Щит на колёсах (мантелет)</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">20</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+  </div>
+  <div class="key key-object">Полное укрытие для тех кто за ним. Катят гоблины. Внутри 2-3 гоблина + сюрприз (лестница или таран)</div>
+</div>
+
+<!-- КАТАПУЛЬТА -->
+<div class="block block-object">
+  <div><span class="name">Катапульта</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">12</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">15</div></div>
+  </div>
+  <div class="key key-object">Стоит на Берегу Пепла (~70 ft). 3 гоблина за залп, раз в 2 раунда. Баллиста убивает одним выстрелом. Приземление гоблина: DEX DC 10, провал = Prone + 1d6</div>
+</div>
+
+<h2>СОЮЗНИКИ</h2>
+
+<!-- GUARD -->
+<div class="block block-ally">
+  <div><span class="name">Guard</span><span class="meta">Лусио, Инес, Рамон — статблок одинаковый</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">16</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">11</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Spear</td><td>+3</td><td>1d6+1 колющ.</td><td>20/60</td></tr>
+  </table>
+  <div class="key key-ally">Кольчужная рубашка + щит. Восприятие +3. Дисциплинированнее рабочих</div>
+</div>
+
+<!-- COMMONER -->
+<div class="block block-ally">
+  <div><span class="name">Commoner</span><span class="meta">Горда Маноло, Пако, Чуло — только если речь прошла</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">10</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">4</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Club / импровизированное</td><td>+2</td><td>1d4 дробящ.</td><td></td></tr>
+  </table>
+  <div class="key key-ally">Мясо. Умирают с одного удара. Но могут держать баррикаду, подавать снаряды, тушить огонь</div>
+</div>
+
+</body>
+</html>
