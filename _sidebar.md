@@ -37,6 +37,9 @@
   - [Орден Священного Пламени](organizations/orden-sacred-flame.md)
   - [Correos de Valencia](organizations/correos-de-valencia.md)
 
+- **Мои персонажи**
+  - [Друид-гном (без имени)](my-characters/druid-gnome.md)
+
 - **Игроки**
   - [Ростер](players/roster.md)
 
