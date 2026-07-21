@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Габариты локаций — El Juego del Juego</title>
+<style>
+  @page { margin: 9mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.32; color: #222; }
+  h1 { font-size: 13pt; text-align: center; margin-bottom: 2px; }
+  .note-top { text-align: center; background: #fff8e1; border: 1px solid #f57f17; padding: 3px 8px; margin: 4px 0 8px; font-size: 8.6pt; }
+  .loc { border: 1px solid #999; border-radius: 2mm; padding: 5px 9px; margin: 6px 0; break-inside: avoid; page-break-inside: avoid; }
+  .loc h2 { font-size: 10.5pt; margin-bottom: 2px; }
+  .size { display: inline-block; background: #333; color: #fff; font-weight: 800; padding: 1px 7px; border-radius: 3px; font-size: 9.5pt; }
+  .shape { color: #555; font-size: 8pt; font-style: italic; }
+  .loc ul { margin: 3px 0 0 16px; font-size: 8.6pt; }
+  .loc li { margin: 1px 0; }
+  .sq { font-weight: 800; color: #7A1F12; white-space: nowrap; }
+  pre.sk { background: #f6f4ee; border: 1px solid #ddd8cc; padding: 4px 6px; font-size: 8pt; line-height: 1.1; margin: 3px 0; font-family: 'Consolas','Courier New',monospace; }
+  .meta { color: #666; font-size: 7.6pt; }
+</style>
+</head>
+<body>
+
+<h1>📐 Габариты локаций — рисовать самому</h1>
+<div class="note-top"><b>1 клетка = 5 футов.</b> Дверь / окно = 1 клетка. Размеры компактные (ЛЕГО-тесно, но помещаются фишки). Объекты даны в клетках — просто отмеряй.</div>
+
+<!-- ТАВЕРНА НИЗ -->
+<div class="loc">
+  <h2>🍺 Таверна «На виду» — нижний этаж (зал)</h2>
+  <span class="size">6 × 5 клеток</span> <span class="shape">прямоугольник, ≈30×25 фт · крошечный зальчик</span>
+  <ul>
+    <li>Входная дверь — <span class="sq">1</span> (короткая стена, центр)</li>
+    <li>Барная стойка — <span class="sq">3×1</span> (вдоль дальней стены)</li>
+    <li>Кухня-подсобка за стойкой — <span class="sq">2×2</span> (угол, проём 1) — банки соуса, крылышки, стеллаж вещей жертв</li>
+    <li>Столики — <span class="sq">2 шт по 1×1</span> в зале (+ табуреты)</li>
+    <li>Лестница наверх — <span class="sq">1×2</span> (угол)</li>
+    <li>Окна — <span class="sq">2 по 1</span></li>
+  </ul>
+</div>
+
+<!-- ТАВЕРНА ВЕРХ -->
+<div class="loc">
+  <h2>🛏 Таверна — верхний этаж (спальня)</h2>
+  <span class="size">6 × 5 клеток</span> <span class="shape">тот же прямоугольник, что и низ</span>
+  <ul>
+    <li>Лестница снизу — <span class="sq">1×2</span></li>
+    <li>Кровать — <span class="sq">2×1</span> <span class="meta">(= мимик)</span></li>
+    <li>Сундук — <span class="sq">1×1</span> <span class="meta">(= мимик)</span></li>
+    <li>Шкаф — <span class="sq">1×1</span> (сумка хранения внутри)</li>
+    <li>Картины — на стенах (метки, клеток не занимают); одна скрывает трещину-окно вниз</li>
+    <li>Окно — <span class="sq">1</span></li>
+  </ul>
+</div>
+
+<!-- ЛУГ -->
+<div class="loc">
+  <h2>🌳 Луг (сцена 2) — открытое, самое большое</h2>
+  <span class="size">8 × 8 клеток</span> <span class="shape">≈40×40 фт, открытая площадка</span>
+  <ul>
+    <li>Основание разрушенной башни — <span class="sq">3×3</span> (в углу; отсюда же вход в башню/подвал)</li>
+    <li>Огромное говорящее дерево — <span class="sq">2×2</span>; под ним камень-люк — <span class="sq">1</span> = вход в катакомбы (сцена 3)</li>
+    <li>Каменный мост с мордой дракона — <span class="sq">3×1</span> (через ложбину); под мостом грибы + микониды</li>
+    <li>Остальное — высокая трава: совомед + 3 паука; в траве 150 зм + золотой ключ</li>
+  </ul>
+</div>
+
+<!-- КАТАКОМБЫ -->
+<div class="loc">
+  <h2>🕯 Катакомбы / подземелье (сцена 3) — узкая змейка под лугом</h2>
+  <span class="size">змейка из 4 колен</span> <span class="shape">коридор 1–2 клетки шириной, вписывается в ≈5×6</span>
+  <pre class="sk">[Спуск 2×2]
+    │
+[Коридор 3×1]
+    │
+[Зал слизней 3×2] ── [Камера 2×2]</pre>
+  <ul>
+    <li>Спуск от люка — <span class="sq">2×2</span></li>
+    <li>Коридор — <span class="sq">3×1</span> (факелы на стенах)</li>
+    <li>Зал слизней — <span class="sq">3×2</span>: 3 чёрных слизня, скелет с добром у стены, кубы с лутом (топаз/череп/сковорода)</li>
+    <li>Камера Алакса — <span class="sq">2×2</span>, тонкая, за запертой дверью <span class="meta">(детально не рисуй — просто клетка с дверью)</span></li>
+  </ul>
+</div>
+
+<!-- БАШНЯ НИЗ -->
+<div class="loc">
+  <h2>🏛 Башня — нижний этаж (святилище, сцена 5)</h2>
+  <span class="size">5 × 5 клеток</span> <span class="shape">квадрат, ≈25×25 фт</span>
+  <ul>
+    <li>Дверь — <span class="sq">1</span></li>
+    <li>Алтарь + 5 драконьих голов + зелёный шар (Око дракона) — <span class="sq">2×1</span> (у дальней стены)</li>
+    <li>Большой ключ на подставке — <span class="sq">1</span></li>
+    <li>Скрытый люк в подвал — <span class="sq">1</span> (в полу у входа)</li>
+    <li>Лестница наверх — <span class="sq">1×2</span> (угол); ниша под ней — <span class="sq">1</span> (зелье + паук-волк)</li>
+  </ul>
+</div>
+
+<!-- БАШНЯ ВЕРХ -->
+<div class="loc">
+  <h2>🗼 Башня — верхний этаж (мастерская / финал, сцены 5–6)</h2>
+  <span class="size">5 × 5 клеток</span> <span class="shape">квадрат с разделением: улица → дверь → комната</span>
+  <pre class="sk">╔═══════════════╗
+║  площадка 5×1  ║  ← снаружи (влез по плющу/лестнице)
+╟──────[дверь]───╢
+║               ║
+║  мастерская   ║  ← внутри: стол-свитки, котёл,
+║     5×3       ║     жаровня-череп, свеча; яйцо (финал)
+╚═══════════════╝</pre>
+  <ul>
+    <li>Наружная площадка — <span class="sq">5×1</span> (кусок «на улице»)</li>
+    <li>Дверь — <span class="sq">1</span> (в стене между площадкой и комнатой)</li>
+    <li>Внутренняя мастерская — <span class="sq">5×3</span>: стол со свитками, котёл, жаровня-череп, свеча</li>
+    <li>Финал (сцена 6): яйцо на выступе в глубине; лестница не достаёт до края — можно повиснуть</li>
+  </ul>
+</div>
+
+<p class="meta" style="margin-top:6px;">Не вошёл сюда <b>подвал</b> (сцена 4: скелеты + Куся + ловушка-секира) — скажи, если нужен, добавлю (≈5×5, квадрат под святилищем).</p>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Huesos de Prueba — карточки персонажей</title>
+<style>
+  @page { size: A4 portrait; margin: 9mm 10mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; color: #28251D; background: white; }
+  .page { width: 190mm; height: 279mm; page-break-after: always; display: grid; grid-template-rows: repeat(5, 1fr); gap: 3mm; }
+  .card { border: 1.6pt solid #28251D; border-radius: 2mm; padding: 2.6mm 3.2mm; overflow: hidden; background: #FBFBF9; }
+  header { display: flex; align-items: baseline; gap: 2mm; border-bottom: .6pt solid #D4D1CA; padding-bottom: 1.2mm; margin-bottom: 1.4mm; }
+  .name { font-size: 12.5pt; font-weight: 800; white-space: nowrap; }
+  .meta { font-size: 7.3pt; color: #5F5B51; }
+  .top { display: grid; grid-template-columns: 46mm 1fr; gap: 2mm; align-items: stretch; }
+  .boxes { display: grid; grid-template-columns: repeat(5, 1fr); gap: .8mm; }
+  .boxes div { border: .7pt solid #8A867D; text-align: center; padding: .5mm .2mm; background: white; }
+  .boxes b { display: block; font-size: 6.2pt; color: #6E675C; }
+  .boxes span { display: block; font-size: 11pt; font-weight: 800; line-height: 1.05; }
+  .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: .6mm; }
+  .stats div { border: .7pt solid #B9B4AA; text-align: center; padding: .5mm .2mm; background: white; }
+  .stats b { display: block; font-size: 6.1pt; color: #6E675C; }
+  .stats span { font-size: 7.6pt; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; margin-top: 1.5mm; font-size: 7.2pt; }
+  th, td { border: .55pt solid #CFC9BD; padding: .55mm 1mm; text-align: left; vertical-align: top; }
+  th { background: #EFEAE0; font-weight: 800; color: #28251D; }
+  ul { margin: 1.3mm 0 0 4mm; padding: 0; font-size: 7.15pt; line-height: 1.22; }
+  li { margin: 0 0 .35mm 0; }
+  .key { margin-top: 1.2mm; border: .8pt solid #A84B2F; background: #FFF1E8; padding: .8mm 1.2mm; font-size: 7.15pt; line-height: 1.18; }
+  .back-card p { font-size: 9.2pt; line-height: 1.34; margin: 0 0 2.1mm 0; }
+  .back-card b { color: #1B474D; }
+  .note { position: fixed; bottom: 3mm; right: 10mm; font-size: 6.5pt; color: #7A7974; }
+</style>
+</head>
+<body>
+<main class="page">
+
+    <section class="card front-card">
+      <header><span class="name">Levian Alvaro</span><span class="meta">Andrew Demchenko / @andrew_demchenko — Human — Sorcerer 3, Draconic Sorcery</span></header>
+      <div class="top"><div class='boxes'><div><b>AC</b><span>15</span></div><div><b>HP</b><span>23</span></div><div><b>Скор.</b><span>30</span></div><div><b>Иниц.</b><span>+2</span></div><div><b>Пасс.</b><span>12</span></div></div><div class='stats'><div><b>СИЛ</b><span>8(-1)</span></div><div><b>ЛОВ</b><span>14(+2)</span></div><div><b>ТЕЛ</b><span>14(+2)</span></div><div><b>ИНТ</b><span>11(+0)</span></div><div><b>МДР</b><span>10(+0)</span></div><div><b>ХАР</b><span>17(+3)</span></div></div></div>
+      <table>
+<tr><th>Оружие/заклинание</th><th>Попад.</th><th>Урон/эффект</th><th>Примечание</th></tr>
+<tr><td>Fire Bolt</td><td>+5</td><td>1d10 огонь</td><td>дальний заговор</td></tr>
+<tr><td>Shocking Grasp</td><td>+5</td><td>1d8 молния</td><td>касание, без реакции</td></tr>
+<tr><td>Chromatic Orb</td><td>+5</td><td>3d8 стихия</td><td>ячейка 1 ур.</td></tr>
+<tr><td>Thunderwave</td><td>CON DC13</td><td>2d8 гром</td><td>15 фт куб</td></tr>
+</table>
+      <ul><li>DC 13, атака +5. 1 ур.: Shield, Sleep, Find Familiar 1/длин., Chromatic Orb, Command, Thunderwave.</li><li>2 ур.: Alter Self, Detect Thoughts, Dragon’s Breath, Mirror Image, Suggestion. Font of Magic: 3 SP.</li><li>Innate Sorcery 2/длин.; Metamagic: Subtle Spell, Twinned Spell. Human: Heroic Inspiration после отдыха.</li></ul>
+      <div class="key">Фейс/арканный кастер. Мотивация: разобраться со своей магией и доказать ценность без имени/статуса. Слабость: Мириэль, изгнание, защитное отношение к женщинам/матерям.</div>
+    </section>
+    
+    <section class="card front-card">
+      <header><span class="name">Rico Grin</span><span class="meta">LeonidSmith / @leonid_smith — Тифлинг — Плут 2, преступник</span></header>
+      <div class="top"><div class='boxes'><div><b>AC</b><span>14</span></div><div><b>HP</b><span>17</span></div><div><b>Скор.</b><span>30</span></div><div><b>Иниц.</b><span>+5</span></div><div><b>Пасс.</b><span>12</span></div></div><div class='stats'><div><b>СИЛ</b><span>8(-1)</span></div><div><b>ЛОВ</b><span>16(+3)</span></div><div><b>ТЕЛ</b><span>15(+2)</span></div><div><b>ИНТ</b><span>12(+1)</span></div><div><b>МДР</b><span>10(+0)</span></div><div><b>ХАР</b><span>14(+2)</span></div></div></div>
+      <table>
+<tr><th>Оружие/заклинание</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+<tr><td>Короткий меч</td><td>+5</td><td>1d6+3 колющ.</td><td>фехт., лёгкое</td></tr>
+<tr><td>Кинжал (Nick)</td><td>+5</td><td>1d4+3 колющ.</td><td>20/60, доп. атака</td></tr>
+<tr><td>Короткий лук (Vex)</td><td>+5</td><td>1d6+3 колющ.</td><td>80/320, преим. след.</td></tr>
+<tr><td>Fire Bolt</td><td>+4</td><td>1d10 огонь</td><td>120 фт, ХАР</td></tr>
+</table>
+      <ul><li>Скрытая атака +1d6; Хитрое действие: Рывок / Отход / Прятки бонусным действием.</li><li>Экспертиза: Ловкость рук +7, Скрытность +7. Alert: +2 инициатива, обмен инициативой.</li><li>Резист к огню, тёмнозрение 60 фт. Языки: Общий, Жестовый, Эльфийский, Гоблинский, Воровской жаргон.</li></ul>
+      <div class="key">Разведчик + DPS. Мотивация: после предательства найти тех, кому сможет доверять. Слабость: не терпит контроля и давления, действует наперекор.</div>
+    </section>
+    
+    <section class="card front-card">
+      <header><span class="name">ThePeterBlack</span><span class="meta">Peter Tovanov / @peterblack — Эльф, High Elf — Волшебник 2</span></header>
+      <div class="top"><div class='boxes'><div><b>AC</b><span>13/16</span></div><div><b>HP</b><span>14</span></div><div><b>Скор.</b><span>30</span></div><div><b>Иниц.</b><span>+3</span></div><div><b>Пасс.</b><span>12</span></div></div><div class='stats'><div><b>СИЛ</b><span>8(-1)</span></div><div><b>ЛОВ</b><span>16(+3)</span></div><div><b>ТЕЛ</b><span>14(+2)</span></div><div><b>ИНТ</b><span>17(+3)</span></div><div><b>МДР</b><span>10(+0)</span></div><div><b>ХАР</b><span>8(-1)</span></div></div></div>
+      <table>
+<tr><th>Оружие/заклинание</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+<tr><td>Fire Bolt</td><td>+5</td><td>1d10 огонь</td><td>120 фт</td></tr>
+<tr><td>Ray of Frost</td><td>+5</td><td>1d8 холод</td><td>60 фт, -10 скорость</td></tr>
+<tr><td>Shocking Grasp</td><td>+5</td><td>1d8 молния</td><td>касание, нет реакции</td></tr>
+<tr><td>Magic Missile</td><td>авто</td><td>3×(1d4+1)</td><td>120 фт</td></tr>
+</table>
+      <ul><li>Заклинания: ИНТ, DC 13, атака +5. 3 ячейки 1 уровня.</li><li>1 ур.: Alarm, Color Spray, Find Familiar, Shield, Ray of Sickness, Fog Cloud, Ice Knife, Jump, Magic Missile, Sleep, Thunderwave, Mage Armor.</li><li>Arcane Recovery 1/длин.; Mage Armor даёт AC 16; Shield реакцией +5 AC.</li></ul>
+      <div class="key">Стеклянная пушка. Очень сильная магия/интеллект, слабые СИЛ/ХАР. Вексели Торгового Альянса: 10.</div>
+    </section>
+    
+    <section class="card front-card">
+      <header><span class="name">Velas</span><span class="meta">Eugene / @jekyna — Elf, Drow Lineage — Rogue 2, Hermit</span></header>
+      <div class="top"><div class='boxes'><div><b>AC</b><span>14</span></div><div><b>HP</b><span>15</span></div><div><b>Скор.</b><span>30</span></div><div><b>Иниц.</b><span>+3</span></div><div><b>Пасс.</b><span>13</span></div></div><div class='stats'><div><b>СИЛ</b><span>8(-1)</span></div><div><b>ЛОВ</b><span>16(+3)</span></div><div><b>ТЕЛ</b><span>13(+1)</span></div><div><b>ИНТ</b><span>15(+2)</span></div><div><b>МДР</b><span>12(+1)</span></div><div><b>ХАР</b><span>10(+0)</span></div></div></div>
+      <table>
+<tr><th>Оружие/действие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+<tr><td>Blowgun (Vex)</td><td>+3</td><td>4 колющ.</td><td>25/100, Loading</td></tr>
+<tr><td>Dagger ×2 (Nick)</td><td>+5</td><td>1d4+3 колющ.</td><td>20/60, доп. light-атака</td></tr>
+<tr><td>Shortbow (Vex)</td><td>+5</td><td>1d6+3 колющ.</td><td>80/320</td></tr>
+<tr><td>Sneak Attack</td><td>—</td><td>+1d6</td><td>1/ход, преим. или союзник</td></tr>
+</table>
+      <ul><li>Экспертиза: Stealth +7, Investigation +6. Навыки: Insight/Medicine/Perception +3, Religion +4, Sleight +5.</li><li>Cunning Action: Dash / Disengage / Hide бонусным действием. Weapon Mastery: Vex, Nick.</li><li>Drow: Darkvision 120, Dancing Lights, Fey Ancestry, Trance. Инструменты: Poisoner’s Kit, Thieves’ Tools.</li></ul>
+      <div class="key">Исследователь ядов, разведчик и эксперт по скрытности/расследованию. Очень сильная зацепка под алхимию.</div>
+    </section>
+    
+    <section class="card front-card">
+      <header><span class="name">Эйен</span><span class="meta">Мария Чистякова / @Myshaclear — Полурослик — Чародей 3, Draconic Sorcery</span></header>
+      <div class="top"><div class='boxes'><div><b>AC</b><span>15</span></div><div><b>HP</b><span>17</span></div><div><b>Скор.</b><span>30</span></div><div><b>Иниц.</b><span>+2</span></div><div><b>Пасс.</b><span>11</span></div></div><div class='stats'><div><b>СИЛ</b><span>8(-1)</span></div><div><b>ЛОВ</b><span>15(+2)</span></div><div><b>ТЕЛ</b><span>10(+0)</span></div><div><b>ИНТ</b><span>13(+1)</span></div><div><b>МДР</b><span>12(+1)</span></div><div><b>ХАР</b><span>17(+3)</span></div></div></div>
+      <table>
+<tr><th>Оружие/заклинание</th><th>Попад./DC</th><th>Урон/эффект</th><th>Примечание</th></tr>
+<tr><td>Sorcerous Burst</td><td>+5</td><td>1d8 стихия</td><td>120 фт</td></tr>
+<tr><td>Chromatic Orb</td><td>+5</td><td>3d8 стихия</td><td>90 фт</td></tr>
+<tr><td>Dragon’s Breath</td><td>DEX DC13</td><td>3d6 конус</td><td>BA, touch, 15 фт</td></tr>
+<tr><td>Command / Sleep</td><td>WIS DC13</td><td>контроль</td><td>60 фт</td></tr>
+</table>
+      <ul><li>DC 13, атака +5. Cantrips: Mending, Message, Prestidigitation, Sorcerous Burst.</li><li>1 ур.: Chromatic Orb, Command, Disguise Self, Shield, Sleep. 2 ур.: Alter Self, Detect Thoughts, Dragon’s Breath, Knock.</li><li>Innate Sorcery 2/длин.; 3 SP. Metamagic: Empowered Spell, Distant Spell. Musician: 2 союзника получают Bardic Inspiration после отдыха.</li></ul>
+      <div class="key">КЛЮЧЕВО: публично Эйен проходит как мужчина, но на самом деле персонаж — женщина, которая притворяется мужчиной. AC 15 от Draconic Resilience; Halfling Luck: переброс 1 на d20.</div>
+    </section>
+    
+</main>
+<main class="page">
+
+    <section class="card back-card">
+      <header><span class="name">Levian Alvaro</span><span class="meta">Нарратив и отыгрыш</span></header>
+      <p><b>Мотивация:</b> После отъезда из Астурии Левиан хочет изучить свои новые способности и доказать, что не только происхождение определяет его ценность. В Валенсии он пытается заслужить своё место под солнцем без имени, статуса и влиятельных друзей.</p><p><b>Слабость:</b> Он всё ещё влюблён в Мириэль. Не успел объясниться и попрощаться; хотел отправить письмо из Валенсии, но не решился. С заботой относится к женщинам, особенно матерям, и не будет причинять им вред даже ради своих целей.</p><p><b>Крючки:</b> изгнание, статус, доказательство собственной ценности, письма/вести от Мириэль, дождь/буря и странные древние видения.</p>
+    </section>
+    
+    <section class="card back-card">
+      <header><span class="name">Rico Grin</span><span class="meta">Нарратив и отыгрыш</span></header>
+      <p><b>Мотивация:</b> После предательства Рико перестал верить людям, но всё ещё пытается найти тех, кому сможет доверять.</p><p><b>Слабость:</b> Не терпит контроля и давления. Если чувствует, что им пытаются управлять, начинает действовать наперекор.</p><p><b>Крючки:</b> NPC, который пытается командовать; контракт с мелким шрифтом; союзник, которому нужно поверить; ситуация, где доверие к группе реально окупается.</p>
+    </section>
+    
+    <section class="card back-card">
+      <header><span class="name">ThePeterBlack</span><span class="meta">Нарратив и отыгрыш</span></header>
+      <p><b>Мотивация:</b> Стать самым могущественным волшебником; поиск силы любой ценой. Отлично цепляется за артефакты, запретные формулы и обещания власти.</p><p><b>Слабость:</b> Боится огня и холода. Это можно задевать угрозами стихий, воспоминаниями, магическими ловушками или выбором между страхом и выгодой.</p><p><b>Контекст:</b> 300-летний High Elf, хаотично-злой оттенок, Haunted One. Не обязательно играть его как карикатурного злодея: лучше давать ситуации, где жажда силы подталкивает к опасным решениям.</p>
+    </section>
+    
+    <section class="card back-card">
+      <header><span class="name">Velas</span><span class="meta">Нарратив и отыгрыш</span></header>
+      <p><b>Мотивация:</b> Найти и синтезировать «универсальную смерть»: принцип, который может убить любую форму жизни. Его ведут образцы, формулы, редкие материалы и проверка гипотез.</p><p><b>Слабость:</b> Запах благовоний или ладана вызывает тошноту и головокружение. В храме, на важной встрече или возле караванного святилища долго не продержится.</p><p><b>Контекст:</b> Вырос среди дроу в Подземье, где яд был языком власти. Ушёл на поверхность за новыми существами, ядами и возможностями; Гильдия Героев даёт ему путешествия и доступ к редким материалам.</p>
+    </section>
+    
+    <section class="card back-card">
+      <header><span class="name">Эйен</span><span class="meta">Нарратив и отыгрыш</span></header>
+      <p><b>Главная тайна:</b> Эйен публично проходит как мужчина, но на самом деле персонаж — женщина, которая притворяется мужчиной. В дневниках пишет о себе от мужского лица; маска явно важна.</p><p><b>Мотивация:</b> Стать известным, чтобы прославить деревню, откуда родом. Хорошо цепляется за публичность, признание, рассказы о подвигах и шанс выступить.</p><p><b>Слабость:</b> Боится больших источников огня. Использовать осторожно: костры, пожары, огненные ловушки, воспоминания или напряжение после «Обрядов огня».</p><p><b>Контекст:</b> В храме нервничала из-за “запрещённой” магии/маскировки и была благодарна группе, что её не сдали. Через страх и огонь всё равно идёт к цели и известности.</p>
+    </section>
+    
+</main>
+</body>
+</html>

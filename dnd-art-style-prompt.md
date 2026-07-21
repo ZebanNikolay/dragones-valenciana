@@ -1,13 +1,13 @@
 # D&D Art Style — Минималистичная акварель
 
-> Единый стиль для генерации арта к приключениям кампании **Dragones Valenciana**.
-> Выбран 14 апреля 2026 после калибровки из 6 стилей.
+> Единый стиль для генерации арта к приключениям кампании **Dragones Valenciana**.
+> Выбран 14 апреля 2026 после калибровки из 6 стилей.
 
 ---
 
 ## Шаблон промпта (Style Template)
 
-Вставлять в начало каждого промпта перед описанием конкретной сцены:
+Вставлять в начало каждого промпта перед описанием конкретной сцены:
 
 ```
 Minimalist semi-abstract watercolor. [SCENE DESCRIPTION]. Forms are simplified wet watercolor shapes — key details suggested by dark blotches and sharp angular strokes, secondary elements dissolve at edges. Very few colors: [PALETTE — 3-5 colors max]. Lots of white paper space. Scene is clearly readable but forms dissolve where they meet the background. No fine details, no textures, no patterns. Atmospheric, moody, evocative. Wet-on-wet watercolor technique with occasional sharp dry-brush accents for focal points.
@@ -17,13 +17,13 @@ Minimalist semi-abstract watercolor. [SCENE DESCRIPTION]. Forms are simplified w
 
 | Правило | Описание |
 |---|---|
-| **Минимализм** | Только необходимые элементы. Никакой избыточности |
+| **Минимализм** | Только необходимые элементы. Никакой избыточности |
 | **Белое пространство** | Большая часть «холста» — пустая белая бумага |
-| **Палитра** | 3-5 цветов максимум. Приглушённые + 1 акцент |
+| **Палитра** | 3-5 цветов максимум. Приглушённые + 1 акцент |
 | **Читаемость** | Сцена понятна с первого взгляда, несмотря на абстрактность |
-| **Растворение** | Формы чёткие в центре внимания, размываются к краям |
-| **Фон** | Минимальные намёки — пара пятен, силуэты, дымка |
-| **НЕ делать** | Не копировать конкретных художников, без зализанности, без красивых эльфийских лиц, без мелких деталей, без рамок/текста |
+| **Растворение** | Формы чёткие в центре внимания, размываются к краям |
+| **Фон** | Минимальные намёки — пара пятен, силуэты, дымка |
+| **НЕ делать** | Не копировать конкретных художников, без зализанности, без красивых эльфийских лиц, без мелких деталей, без рамок/текста |
 
 ### Палитры по темам
 
@@ -32,7 +32,7 @@ Minimalist semi-abstract watercolor. [SCENE DESCRIPTION]. Forms are simplified w
 | **Пустошь / Mad Max** | burnt orange, ashen grey-brown, dried blood red, bone white |
 | **Лес / природа** | deep olive green, warm brown, misty grey, golden amber |
 | **Ночь / тревога** | deep indigo, cold grey, pale amber (огни), charcoal |
-| **Бой / осада** | burnt sienna, smoke grey, blood red accent, dusty ochre |
+| **Бой / осада** | burnt sienna, smoke grey, blood red accent, dusty ochre |
 | **Магия / портал** | muted teal, warm amber glow, deep purple, pale gold |
 
 ---
@@ -57,9 +57,9 @@ Minimalist semi-abstract watercolor. Close-up of a wasteland mutant goblin point
 
 ### Результат
 
-Безумный гоблин-мутант в шлеме из черепа, указывающий вперёд с хищным оскалом. На заднем плане — размытые силуэты бегущих дикарей в оранжевой дымке пустоши. Формы растворяются в мокрых акварельных пятнах, много белого пространства.
+Безумный гоблин-мутант в шлеме из черепа, указывающий вперёд с хищным оскалом. На заднем плане — размытые силуэты бегущих дикарей в оранжевой дымке пустоши. Формы растворяются в мокрых акварельных пятнах, много белого пространства.
 
-**Файл:** `goblin_03_watercolor.png`
+**Файл:** `goblin_03_watercolor.png`
 
 ---
 
@@ -75,23 +75,30 @@ Minimalist semi-abstract watercolor. Close-up of a wasteland mutant goblin point
 
 ## Шаблон промпта для заголовков (Title Template)
 
-Отдельный шаблон для генерации названий приключений как изображений.
+Отдельный шаблон для генерации названий приключений как изображений.
 Модель: обязательно `gpt_image_1_5` (умеет рисовать текст).
 
+> **Важно:** без явного описания формы букв модель каждый раз выбирает разный шрифт (может выдать курсив, скоропись, засечки и т.д.). Описание шрифта ниже фиксирует стиль, чтобы все заголовки серии выглядели одинаково.
+
 ```
-The text [YOUR TITLE] written in a single horizontal line in black watercolor on white paper. The letters show rich watercolor texture: where the brush carried more pigment the black is deep and saturated, where less pigment it fades to translucent grey. The edges of each letter bleed softly outward into the wet paper — feathered, diffused borders typical of wet-on-wet watercolor technique. Visible variation in ink density within each stroke. Only a few tiny satellite droplets near letters, no heavy drips streaming downward, no large splatter clouds. The overall feel is handmade, organic, with that distinctive watercolor bloom effect at letter edges. Pure black ink only on white background, no other colors, no other elements.
+The text "[YOUR TITLE]" written in ONE SINGLE HORIZONTAL LINE on white paper, all words on the same line, no line breaks. ALL LETTERS ARE UPPERCASE CAPITAL LETTERS. The letterforms are hand-painted with a medium round brush — straight, slightly irregular strokes, moderate weight (not super heavy/blocky, not thin either), narrow proportions so all characters fit on one row, no italic slant, no cursive connections between letters, no script handwriting. Each letter stands separately with clear gaps. Some letters slightly taller or shorter than neighbors for handmade feel. The letters show rich black watercolor texture with visible variation in ink density — some strokes deep saturated black, others fading to translucent grey. Edges bleed softly outward into the wet paper with feathered borders typical of wet-on-wet watercolor. Only a few tiny satellite droplets near letters, no heavy drips, no large splatter. Pure black ink on white background, no other colors, no other elements.
 ```
 
 ### Обязательные правила для заголовков
 
 | Правило | Описание |
 |---|---|
-| **Одна строка** | Весь текст в одну горизонтальную строку |
-| **Только чёрный** | Никаких цветов, только чёрная акварель |
-| **Акварельная текстура** | Расплывшиеся мягкие края букв, перепады плотности пигмента |
-| **Минимум шума** | Пара мелких капель рядом — не больше. Без крупных потёков вниз |
+| **Одна строка** | Весь текст в одну горизонтальную строку, никаких переносов |
+| **ВСЁ ЗАГЛАВНЫМИ** | ALL UPPERCASE CAPITAL LETTERS — обязательно прописать большими в промпте |
+| **Форма букв** | Рубленые (sans-serif), прямые штрихи, средний вес, узкие пропорции |
+| **БЕЗ курсива** | no italic slant, no cursive connections, no script handwriting — обязательно явно запретить |
+| **Отдельные буквы** | Each letter stands separately with clear gaps — буквы не соединяются |
+| **Лёгкая неровность** | Some letters slightly taller or shorter — рукотворное ощущение |
+| **Только чёрный** | Никаких цветов, только чёрная акварель |
+| **Акварельная текстура** | Расплывшиеся мягкие края, перепады плотности пигмента |
+| **Минимум шума** | Пара мелких капель рядом — не больше. Без крупных потёков вниз |
 | **Модель** | `gpt_image_1_5` — единственная модель, корректно рисующая текст |
-| **Формат** | `16:9` — горизонтальный, чтобы текст поместился в строку |
+| **Формат** | `16:9` — горизонтальный, чтобы текст поместился в строку |
 
 ### Параметры генерации
 
@@ -107,24 +114,22 @@ The text [YOUR TITLE] written in a single horizontal line in black watercolor on
 ### Как совмещать с артом
 
 1. Сгенерировать заголовок отдельно по шаблону выше
-2. Скриптом обрезать белые поля (crop по тёмным пикселям)
-3. Масштабировать до ~75% ширины основной картинки
+2. Скриптом обрезать белые поля (crop по тёмным пикселям)
+3. Масштабировать до ~75% ширины основной картинки
 4. Расширить холст арта вниз и вклеить заголовок по центру
-5. Гоблин / основная картинка при этом остаётся пиксель-в-пиксель
+5. Гоблин / основная картинка при этом остаётся пиксель-в-пиксель
 
 ---
 
-## Пример: заголовок «GUARDIANES DEL OMBLIGO»
+## Примеры заголовков
 
-### Промпт
+### «GUARDIANES DEL OMBLIGO» (приключение 4)
 
-```
-The text GUARDIANES DEL OMBLIGO written in a single horizontal line in black watercolor on white paper. The letters show rich watercolor texture: where the brush carried more pigment the black is deep and saturated, where less pigment it fades to translucent grey. The edges of each letter bleed softly outward into the wet paper — feathered, diffused borders typical of wet-on-wet watercolor technique. Visible variation in ink density within each stroke. Only a few tiny satellite droplets near letters, no heavy drips streaming downward, no large splatter clouds. The overall feel is handmade, organic, with that distinctive watercolor bloom effect at letter edges. Pure black ink only on white background, no other colors, no other elements.
-```
+**Файл надписи:** `title_v1c_watercolor_bloom.png`
+**Файл с артом:** `goblin_wc_bloom_title.png`
 
-### Результат
+### «HUESOS DE PRUEBA» (приключение 5)
 
-Чёрная акварельная надпись в одну строку — мягкие расплывшиеся края, перепады плотности пигмента, пара мелких капель. Совмещена с гоблином-дикарём (75% ширины, под картинкой).
+**Файл надписи:** `adventures/005-huesos-de-prueba/images/title.png`
 
-**Файл надписи:** `title_v1c_watercolor_bloom.png`
-**Файл с артом:** `goblin_wc_bloom_title.png`
+Промпт собирается из шаблона выше подстановкой `HUESOS DE PRUEBA` вместо `[YOUR TITLE]`.

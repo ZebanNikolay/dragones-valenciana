@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Combat Tracker — Скелеты «Напролом» (сцена 4)</title>
+<style>
+  @page { margin: 8mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.3; color: #222; }
+  h1 { font-size: 13pt; text-align: center; margin-bottom: 3px; border-bottom: 2px solid #333; padding-bottom: 2px; }
+  h2 { font-size: 10pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 7px; margin-bottom: 3px; }
+  h3 { font-size: 9pt; margin-top: 4px; margin-bottom: 2px; border-bottom: 1px solid #999; }
+  table { border-collapse: collapse; width: 100%; margin: 2px 0; font-size: 8pt; }
+  td, th { border: 1px solid #999; padding: 2px 4px; }
+  th { background: #eee; text-align: left; }
+  .init-table td { height: 20px; }
+  .init-table td:nth-child(1) { width: 18px; text-align: center; }
+  .hp-track { font-family: monospace; font-size: 8pt; letter-spacing: 1px; }
+  .key { background: #fff1e8; border: 1.5px solid #A84B2F; padding: 5px 9px; margin: 5px 0; font-size: 8.5pt; }
+  .key b { color: #7A1F12; }
+  .block { border: 1.5px solid #555; border-radius: 2mm; padding: 5px 8px; margin: 5px 0; break-inside: avoid; page-break-inside: avoid; }
+  .block-ally { background: #e8f5e9; border: 1px solid #2e7d32; padding: 3px 6px; margin: 3px 0; font-size: 8pt; }
+  .bhead { font-size: 10.5pt; font-weight: 800; }
+  .bsub { font-size: 7.5pt; color: #555; font-style: italic; margin-bottom: 2px; }
+  .abils { display: grid; grid-template-columns: repeat(6,1fr); gap: 2px; margin: 3px 0; text-align: center; }
+  .abils div { border: 1px solid #bbb; padding: 1px; font-size: 7.5pt; }
+  .abils b { display: block; font-size: 6.8pt; color: #666; }
+  .act { font-size: 8pt; margin: 1.5px 0; }
+  .act b { color: #000; }
+  .gear { background: #f6f2ea; border-left: 3px solid #b08d57; padding: 3px 7px; margin: 3px 0; font-size: 8.2pt; }
+  .gear b.g { color: #7a5f34; }
+  .warn { color: #b71c1c; font-weight: bold; }
+  .plan { background: #f3f0ea; border-left: 3px solid #333; padding: 3px 8px; margin: 3px 0; font-size: 8.2pt; }
+  .plan b.r { color: #333; }
+  .meta { color: #555; font-size: 7pt; }
+</style>
+</head>
+<body>
+
+<h1>💀 Combat Tracker — Скелеты «Напролом» (сцена 4, подвал)</h1>
+<p class="meta" style="text-align:center;">3 оживлённых скелета = останки отряда «Напролом». Хрупкие, но с магическим лутом. Баланс: <b>лёгкий–средний</b> по урону; главная угроза — мантия (стан) и конус антимагии Куси.</p>
+
+<h2>Инициатива</h2>
+<table class="init-table">
+  <tr><th>#</th><th>Кто</th><th>Иниц. (мод.)</th><th>Заметки / состояние</th></tr>
+  <tr><td>1</td><td><b>Скелет-воин</b></td><td>+2</td><td>кираса+1, меч остроты — держит фронт</td></tr>
+  <tr><td>2</td><td><b>Скелет-плут</b></td><td>+2</td><td>кольцо невидимости, кинжал яда</td></tr>
+  <tr><td>3</td><td><b>Скелет-маг</b></td><td>+2</td><td>мантия сияющих цветов</td></tr>
+  <tr><td>4</td><td>🛡 Гном-воин</td><td>+1</td><td></td></tr>
+  <tr><td>5</td><td>✨ Эльф-маг</td><td>+3</td><td></td></tr>
+  <tr><td>6</td><td>🗡 Орк-плут</td><td>+4</td><td></td></tr>
+  <tr><td>7</td><td>✚ Дварф-жрец</td><td>+0</td><td></td></tr>
+  <tr><td>8</td><td>Куся (если провоцируют)</td><td>+1</td><td>иначе не в бою — см. ниже</td></tr>
+</table>
+
+<div class="key">
+  <b>🔑 Хазарды на входе и на поле:</b>
+  <ul style="margin:2px 0 0 16px;">
+    <li><b>Ловушка-секира</b> на двери из подземелья: открыть → лезвие. <b>ЛОВ DC 15</b> иначе 2d8 рубящего. 🗡 Плут обезвреживает авто (с видимой стороны).</li>
+    <li><b>Розовые ядовитые растения:</b> касание — 2d6 яд (само срабатывает). Не загоняйте PC в них, но враги могут теснить туда.</li>
+    <li><b class="warn">Конус антимагии Куси:</b> пока «бехолдер» в комнате — магия перед ним (150 фт) не работает. Если жрец/маг в конусе — их касты «немеют». Учитывай при позиционировании.</li>
+  </ul>
+</div>
+
+<h2>HP-трекеры (скелеты хрупкие: 13 HP, уязвимость к дробящему ×2)</h2>
+<div class="block" style="margin-bottom:3px; padding:3px 8px;">
+  <b>Скелет-воин</b> · AC 15 (кираса+1) &nbsp; HP /13 <span class="hp-track">□□□□□ □□□□□ □□□</span> &nbsp; Сост.: ________
+</div>
+<div class="block" style="margin-bottom:3px; padding:3px 8px;">
+  <b>Скелет-плут</b> · AC 13 &nbsp; HP /13 <span class="hp-track">□□□□□ □□□□□ □□□</span> &nbsp; Невидим: ☐ &nbsp; Яд использован: ☐
+</div>
+<div class="block" style="margin-bottom:3px; padding:3px 8px;">
+  <b>Скелет-маг</b> · AC 13 &nbsp; HP /13 <span class="hp-track">□□□□□ □□□□□ □□□</span> &nbsp; Заряды мантии: ☐☐☐
+</div>
+<div class="block-ally">
+  <b>Партия</b> (справка): 🛡 Гном AC 17/44 · ✨ Маг AC 13→16/22 · 🗡 Плут AC 15/28 · ✚ Жрец AC 16/30 · Алакс AC 10/58 (если рядом)
+</div>
+
+<h2>Статблок — Скелет (база)</h2>
+<div class="block">
+  <div class="bhead">☠ Скелет</div>
+  <div class="bsub">Средняя нежить, законно-злой · говорят: — · тёмное зрение 60 фт</div>
+  <div class="stat-line" style="font-size:8pt;"><b>AC</b> 13 (обрывки доспеха) &nbsp;·&nbsp; <b>Хиты</b> 13 (2d8+4) &nbsp;·&nbsp; <b>Скорость</b> 30 фт</div>
+  <div class="abils">
+    <div><b>СИЛ</b>10<br>+0</div><div><b>ЛОВ</b>14<br>+2</div><div><b>ТЕЛ</b>15<br>+2</div><div><b>ИНТ</b>6<br>−2</div><div><b>МДР</b>8<br>−1</div><div><b>ХАР</b>5<br>−3</div>
+  </div>
+  <div class="stat-line" style="font-size:8pt;"><b class="warn">Уязвимость:</b> дробящий &nbsp;·&nbsp; <b>Иммунитет:</b> яд, истощение</div>
+  <div class="act"><b>Короткий меч +4</b> (5 фт): 1d6+2 колющ. &nbsp;·&nbsp; <b>Короткий лук +4</b> (80/320): 1d6+2 колющ.</div>
+</div>
+
+<h2>Их снаряжение (оно же лут)</h2>
+<div class="gear"><b class="g">Скелет-воин:</b> кираса +1 (AC 15) + <b>меч остроты</b> — атака <b>+4</b>, 1d8+2 рубящ.; на <b>нат.20</b> — доп. 4d6 и может отрубить конечность; макс. урон по предметам/дверям.</div>
+<div class="gear"><b class="g">Скелет-плут:</b> <b>кинжал яда</b> — <b>+4</b>, 1d4+2 колющ. + <b>2d10 яд</b> (ТЕЛ DC 15, ½; 1 раз за бой) · <b>кольцо невидимости</b> — своим ходом становится невидимым: атака с преимуществом, скрытая атака, «откуда удар?».</div>
+<div class="gear"><b class="g">Скелет-маг:</b> <b>мантия сияющих цветов</b> — <b>действием</b> вспышка цветов до конца его следующего хода:<br>
+ • яркий свет 30 фт;<br>
+ • атакующие, видящие мага, — <b>помеха на атаки по нему</b>;<br>
+ • все в ярком свете, видевшие вспышку — <b>МДР DC 15 или ОГЛУШЕНЫ</b> до конца эффекта.<br>
+ <span class="meta">3 заряда. Упрощённый вариант (в духе модуля): только помеха на атаки по магу, без оглушения.</span></div>
+
+<h2>Куся — не боец (но фактор)</h2>
+<div class="block-ally" style="background:#eef6ff; border-color:#3b6ea5;">
+  «Бехолдер» = питомец Алакса (displacer beast), превращён свитком. <b>Первым не нападает.</b> Главное — <b class="warn">центральный глаз = конус антимагии</b>, гасит касты перед собой. Успокоить: молоко / имя «Куся» (Уход за жив. DC 10). Вернуть облик: посеребрённая сковорода / <i>dispel magic</i>.<br>
+  <span class="meta">Если всё же провоцируют — displacer beast: AC 13, HP 85, Щупальца +6 (1d6+3 + 1d6); атаки по нему с помехой.</span>
+</div>
+
+<h2>План боя — как дерутся скелеты (шаблон)</h2>
+<p class="meta">Бездушные, но двигаются слаженно, как «эхо» отряда «Напролом». Цель — не убить всех, а сделать бой напряжённым (стан + невидимка), пока хрупкие тела не рассыплются.</p>
+<div class="plan"><b class="r">Раунд 1:</b> <b>Маг</b> — мантия: вспышка, оглушить кучку PC (МДР DC 15). <b>Плут</b> — невидимость, заходит за спину. <b>Воин</b> — держит проход, атакует ближайшего.</div>
+<div class="plan"><b class="r">Раунд 2:</b> <b>Плут</b> из невидимости — кинжал яда по оглушённому магу/жрецу (преим. + крит вблизи + 2d10 яд). <b>Воин</b> — меч остроты по танку. <b>Маг</b> — снова мантия, если есть заряд.</div>
+<div class="plan"><b class="r">Средовое:</b> теснят PC в ядовитые растения; стараются держать касторов PC <b>в конусе Куси</b>, чтобы отрубить им магию.</div>
+<div class="plan"><b class="r">Слом:</b> 13 HP + уязвимость к дробящему → молот жреца / кулак крошат их за удар-два. Как только пал маг (мантия) — угроза резко падает.</div>
+
+<h3>💡 Чтобы бой был интересным</h3>
+<ul style="margin:2px 0 0 16px; font-size:8.2pt;">
+  <li><b>Бей мага первым:</b> подай игрокам, что вспышка идёт от него — снять контроль = выиграть темп.</li>
+  <li><b>Невидимый плут:</b> держи саспенс — удары «из ниоткуда», пусть ищут по звуку/пыли.</li>
+  <li><b>Куся на поле:</b> если PC в разгар боя приручат Кусю (молоко/имя) — можно обыграть, что конус антимагии теперь мешает и скелету-магу тоже.</li>
+  <li><b>Голоса «Напролом»:</b> череп в сц.3 назвал их (Гракл/Килдар/Колин/Эстус) — скелеты могут ронять обрывки фраз, жутковатый штрих.</li>
+</ul>
+
+<h2>Лут (после боя)</h2>
+<p style="font-size:8.4pt;">С скелетов: <b>кираса +1</b>, <b>меч остроты</b>, <b>кинжал яда</b>, <b>кольцо невидимости</b>, <b>мантия сияющих цветов</b>. &nbsp; В комнате: manual of quickness of action, свиток protection from energy, 100 зм, фонарь обнаружения, зелье лечения (большое), зелье героизма.</p>
+
+</body>
+</html>

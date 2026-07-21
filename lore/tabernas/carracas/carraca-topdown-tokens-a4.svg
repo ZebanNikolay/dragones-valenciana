@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/>
+<text x="12" y="13" font-family="Arial" font-size="6" font-weight="700" fill="#28251D">Huesos de Prueba — токены карак, вид сверху</text>
+<text x="12" y="20" font-family="Arial" font-size="3.2" fill="#7A7974">Печатать 100%, 1 клетка = 25.4 мм. Основной точный файл: PDF.</text>
+<g fill="none" stroke="#D9D3C8" stroke-width="0.2">
+  <rect x="16" y="32" width="50.8" height="76.2" stroke="#A84B2F" stroke-width="0.45" rx="2"/>
+  <rect x="78" y="32" width="50.8" height="76.2" stroke="#A84B2F" stroke-width="0.45" rx="2"/>
+  <rect x="172" y="58" width="76.2" height="101.6" stroke="#A84B2F" stroke-width="0.45" rx="2"/>
+</g>
+<text x="16" y="29" font-family="Arial" font-size="4" font-weight="700">Cometa A</text>
+<text x="78" y="29" font-family="Arial" font-size="4" font-weight="700">Cometa B</text>
+<text x="172" y="55" font-family="Arial" font-size="4" font-weight="700">Мучитель</text>
+</svg>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Combat Tracker — Финал: Дракон (El Juego del Juego)</title>
+<style>
+  @page { margin: 8mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.3; color: #222; }
+  h1 { font-size: 13pt; text-align: center; margin-bottom: 3px; border-bottom: 2px solid #333; padding-bottom: 2px; }
+  h2 { font-size: 10pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 7px; margin-bottom: 3px; }
+  h3 { font-size: 9pt; margin-top: 4px; margin-bottom: 2px; border-bottom: 1px solid #999; }
+  table { border-collapse: collapse; width: 100%; margin: 2px 0; font-size: 8pt; }
+  td, th { border: 1px solid #999; padding: 2px 4px; }
+  th { background: #eee; text-align: left; }
+  .init-table td { height: 20px; }
+  .init-table td:nth-child(1) { width: 18px; text-align: center; }
+  .hp-track { font-family: monospace; font-size: 8pt; letter-spacing: 1px; }
+  .key { background: #fff1e8; border: 1.5px solid #A84B2F; padding: 5px 9px; margin: 5px 0; font-size: 8.6pt; }
+  .key b { color: #7A1F12; }
+  .block-boss { border: 1.5px solid #7A1F12; border-radius: 2mm; padding: 5px 8px; margin: 5px 0; break-inside: avoid; page-break-inside: avoid; }
+  .block-boss.mage { border-color: #4527a0; }
+  .block-ally { background: #e8f5e9; border: 1px solid #2e7d32; padding: 3px 6px; margin: 3px 0; font-size: 8pt; }
+  .bhead { font-size: 11pt; font-weight: 800; color: #7A1F12; }
+  .mage .bhead { color: #4527a0; }
+  .bsub { font-size: 7.5pt; color: #555; font-style: italic; margin-bottom: 2px; }
+  .stat-line { font-size: 8pt; margin: 1px 0; }
+  .abils { display: grid; grid-template-columns: repeat(6,1fr); gap: 2px; margin: 3px 0; text-align: center; }
+  .abils div { border: 1px solid #bbb; padding: 1px; font-size: 7.5pt; }
+  .abils b { display: block; font-size: 6.8pt; color: #666; }
+  .act { font-size: 8pt; margin: 1.5px 0; }
+  .act b { color: #000; }
+  .warn { color: #b71c1c; font-weight: bold; }
+  .plan { background: #f3f0ea; border-left: 3px solid #333; padding: 3px 8px; margin: 3px 0; font-size: 8.2pt; }
+  .plan b.r { color: #7A1F12; }
+  .meta { color: #555; font-size: 7pt; }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<h1>⚔️🐉 Combat Tracker — Финал: Дракон (сцена 6)</h1>
+<p class="meta" style="text-align:center;">Двойной босс: Эрван Душегуб + Пеплорёв на вершине башни. Стравить одного на другого — ключ к победе.</p>
+
+<h2>Инициатива</h2>
+<table class="init-table">
+  <tr><th>#</th><th>Кто</th><th>Иниц. (мод.)</th><th>Заметки / состояние</th></tr>
+  <tr><td>1</td><td><b>Эрван Душегуб</b></td><td>+2</td><td>левитирует, свиток hold monster</td></tr>
+  <tr><td>2</td><td><b>Пеплорёв (дракон)</b></td><td>+0</td><td>влетает на 1-м раунде</td></tr>
+  <tr><td>3</td><td>🛡 Гном-воин</td><td>+1</td><td></td></tr>
+  <tr><td>4</td><td>✨ Эльф-маг</td><td>+3</td><td></td></tr>
+  <tr><td>5</td><td>🗡 Орк-плут</td><td>+4</td><td></td></tr>
+  <tr><td>6</td><td>✚ Дварф-жрец</td><td>+0</td><td></td></tr>
+  <tr><td>7</td><td>Алакс (если с партией)</td><td>+0</td><td>союзник</td></tr>
+  <tr><td>8</td><td></td><td></td><td></td></tr>
+  <tr><td>9</td><td></td><td></td><td></td></tr>
+  <tr><td>10</td><td></td><td></td><td></td></tr>
+</table>
+
+<div class="key">
+  <b>🔑 КЛЮЧЕВОЙ МОМЕНТ — свиток «Удержание чудовища» [hold monster].</b> Как только дракон прилетает, Эрван первым делом накладывает на неё свиток.
+  <ul style="margin:2px 0 0 16px;">
+    <li><b>Как разыграть:</b> цель — Пеплорёв. Спасбросок <b>МДР DC 15</b> (свиток 4 ур.).</li>
+    <li><b>Провал</b> → дракон парализована на 1 мин (переброс МДР в конце каждого её хода). Парализованный: не двигается, атаки по нему с преим. и вблизи = крит. Эрван рвётся к яйцу и <i>dimension door</i>.</li>
+    <li><b>Успех</b> → дракон «смеётся над ничтожной магией», свиток в пыль. У Пеплорёв <b>Легендарное сопротивление 3/день</b> — она может просто выбрать успех (канон-настроение: план Эрвана проваливается).</li>
+    <li><b class="warn">Хук для игроков:</b> hold monster требует <b>концентрации</b> Эрвана. Урон по нему → спасбросок концентрации (ТЕЛ DC = 10 или ½ урона) — сорвать = освободить дракона. Отличный момент «разбейте свиток!».</li>
+    <li>В любом случае свиток рассыпается после каста.</li>
+  </ul>
+</div>
+
+<h2>HP-трекеры</h2>
+<div class="block-boss" style="margin-bottom:3px;">
+  <b class="bhead" style="font-size:10pt;">Эрван Душегуб</b> — AC 15 (mage armor) · КД без брони 12<br>
+  HP /84 &nbsp; <span class="hp-track">□□□□□ □□□□□ □□□□□ □□</span> <span class="meta">(1 клетка ≈ 5 HP)</span> &nbsp; Концентрация: ☐ &nbsp; Состояние: __________
+</div>
+<div class="block-boss" style="margin-bottom:3px;">
+  <b class="bhead" style="font-size:10pt;">Пеплорёв (дракон)</b> — AC 19<br>
+  HP /256 &nbsp; <span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □</span> <span class="meta">(1 клетка ≈ 10 HP)</span><br>
+  Лег. сопротивление: ☐☐☐ &nbsp; Лег. действия/раунд: ☐☐☐ &nbsp; Дыхание готово: ☐ (перезар. 5–6)
+</div>
+<div class="block-ally">
+  <b>Партия</b> (для справки): 🛡 Гном AC 17/44 · ✨ Маг AC 13→16/22 · 🗡 Плут AC 15/28 · ✚ Жрец AC 16/30 · Алакс AC 10/58
+</div>
+
+<!-- ================= СТАТБЛОКИ ================= -->
+<h2 class="page-break">Статблок — Пеплорёв (Cinderhowl)</h2>
+<div class="block-boss">
+  <div class="bhead">🐉 Пеплорёв — взрослый красный дракон</div>
+  <div class="bsub">Огромный дракон, хаотично-злой · Опасность 17 · говорит на Общем и Драконьем</div>
+  <div class="stat-line"><b>КД</b> 19 &nbsp;·&nbsp; <b>Хиты</b> 256 (19d12+133) &nbsp;·&nbsp; <b>Скорость</b> 40 фт, лазание 40, <b>полёт 80</b></div>
+  <div class="abils">
+    <div><b>СИЛ</b>27<br>+8</div><div><b>ЛОВ</b>10<br>+0</div><div><b>ТЕЛ</b>25<br>+7</div><div><b>ИНТ</b>16<br>+3</div><div><b>МДР</b>13<br>+1</div><div><b>ХАР</b>21<br>+5</div>
+  </div>
+  <div class="stat-line"><b>Спасброски:</b> ЛОВ +6, ТЕЛ +13, МДР +7, ХАР +11 &nbsp;·&nbsp; <b>Навыки:</b> Восприятие +13, Скрытность +6</div>
+  <div class="stat-line"><b>Иммунитет:</b> огонь &nbsp;·&nbsp; <b>Чувства:</b> слепое зрение 60, тёмное зрение 120, пасс. Восприятие 23</div>
+  <div class="stat-line"><b>Лег. сопротивление (3/день):</b> провалив спасбросок, может выбрать успех.</div>
+  <hr style="margin:3px 0;">
+  <div class="act"><b>Мультиатака:</b> Ужасающее присутствие + 3 атаки (укус + 2 когтя).</div>
+  <div class="act"><b>Укус +14</b> (досяг. 10 фт): 2d10+8 колющ. <b>+ 2d6 огонь</b>.</div>
+  <div class="act"><b>Коготь +14</b> (5 фт): 2d6+8 рубящ.</div>
+  <div class="act"><b>Хвост +14</b> (15 фт): 2d8+8 дробящ.</div>
+  <div class="act"><b>Ужасающее присутствие:</b> все в 120 фт — МДР DC 19 или испуган 1 мин (переброс в конце хода).</div>
+  <div class="act"><b>Огненное дыхание (перезар. 5–6):</b> конус 60 фт, ЛОВ DC 21 → <b>18d6 (~63) огонь</b>, ½ при успехе.</div>
+  <div class="act"><b>Легендарные действия (3/раунд, в конце чужих ходов):</b> Обнаружение (Восприятие) · Атака хвостом · <b>Атака крыльями (стоит 2):</b> все в 15 фт — ЛОВ DC 22 или 2d6+8 дробящ. + сбит с ног, дракон взлетает на ½ скорости.</div>
+</div>
+
+<h2>Статблок — Эрван Душегуб</h2>
+<div class="block-boss mage">
+  <div class="bhead">🧙 Эрван Душегуб</div>
+  <div class="bsub">Средний гуманоид (человек), хаотично-злой · Опасность 5 · Общий, Драконий</div>
+  <div class="stat-line"><b>КД</b> 12 (15 с доспехом мага) &nbsp;·&nbsp; <b>Хиты</b> 84 (13d8+26) &nbsp;·&nbsp; <b>Скорость</b> 30 фт</div>
+  <div class="abils">
+    <div><b>СИЛ</b>10<br>+0</div><div><b>ЛОВ</b>15<br>+2</div><div><b>ТЕЛ</b>14<br>+2</div><div><b>ИНТ</b>11<br>+0</div><div><b>МДР</b>8<br>−1</div><div><b>ХАР</b>17<br>+3</div>
+  </div>
+  <div class="stat-line"><b>Навыки:</b> Магия +3, Обман +6 &nbsp;·&nbsp; <b>Чувства:</b> пасс. Восприятие 9 &nbsp;·&nbsp; Бонус мастерства +3</div>
+  <hr style="margin:3px 0;">
+  <div class="act"><b>Мультиатака:</b> 3 атаки Магическим зарядом.</div>
+  <div class="act"><b>Магический заряд +6</b> (дальность 120 фт): 3d6+3 (~13) урон силовым полем.</div>
+  <div class="act"><b>Кислотный дождь (перезар. после отдыха):</b> цилиндр R10/H20 фт, центр в 120 фт — ЛОВ DC 14 → 4d10 (~22) кислота, ½.</div>
+  <div class="act"><b>Заклинания</b> (ХАР, DC 14): неогр. <i>mage hand, light</i>; 2/день <i>dimension door</i>; 1/день <i>mage armor, levitate, disguise self</i>.</div>
+  <div class="act"><b>Разово:</b> свиток <i>hold monster</i> (см. ключевой момент выше).</div>
+</div>
+
+<!-- ================= ТАКТИКА ================= -->
+<h2>План боя — как действуют враги (шаблон, не жёстко)</h2>
+
+<h3>🧙 Эрван — трус с планом (яйцо превыше всего)</h3>
+<p class="meta">Психология: загнан в угол, но хитёр. Не лезет в ближний бой — левитирует над площадкой, держит дистанцию. Не бьётся насмерть, пока есть шанс сбежать с яйцом. Но яйцо не отдаст — «скорее умрёт».</p>
+<div class="plan"><b class="r">Раунд 1:</b> <i>hold monster</i> на дракона (свиток). Держит концентрацию. Левитирует повыше, вне досягаемости мили.</div>
+<div class="plan"><b class="r">Раунд 2:</b> если дракон парализована → рвётся к яйцу, хватает и <i>dimension door</i> прочь. Если мешают PC → 3× магический заряд по самому опасному (маг/лучник).</div>
+<div class="plan"><b class="r">Раунд 3+:</b> <b>кислотный дождь</b>, когда PC сбились в кучу. <i>dimension door</i> (2/день) — уйти от окружения. Прикрывается яйцом: «Подойдёте — раздавлю!» <span class="meta">(блеф — яйцо почти неразрушимо)</span>.</div>
+<div class="plan"><b class="r">Слом:</b> если дракон освобождена и повернулась на него — паникует, тратит <i>dimension door</i> на побег; загнанный без выхода — дерётся зарядами до конца.</div>
+
+<h3>🐉 Пеплорёв — обезумевшая мать (ярость + горе)</h3>
+<p class="meta">Психология: не тактик — её ведёт ярость за яйцо. Сначала винит PC. Использует высоту башни: сбивает с площадки (падение!), жжёт с воздуха, не подставляется под мили.</p>
+<div class="plan"><b class="r">Влёт:</b> <b>Ужасающее присутствие</b> (DC 19) — драматично, часть PC пугается. Рёв, обвинение в краже.</div>
+<div class="plan"><b class="r">Если НЕ перенаправлена:</b> <b>огненное дыхание</b> по группе (1 раз), затем укус/когти по тому, кто держит яйцо. Лег. действие <b>«Атака крыльями»</b> — скидывает PC с края башни (падение + prone).</div>
+<div class="plan"><b class="r">Если перенаправлена</b> (ХАР Обман/Убеждение <b>DC 20</b>, или показали, что вор — Эрван): вся ярость на Эрвана. <span class="warn">Это win-условие партии</span> — дракон рвёт мага в клочья (у него нет сопротивления огню), PC в это время спасают яйцо/уходят.</div>
+<div class="plan"><b class="r">Бережёт яйцо:</b> не жжёт вслепую рядом с ним; маневрирует, чтобы прикрыть. <b>Если проигрывает</b> — хватает яйцо, улетает, обещая преследовать в кошмарах.</div>
+
+<h3>💡 Идеи, чтобы бой был интересным (а не «тыкать друг друга»)</h3>
+<ul style="margin:2px 0 0 16px; font-size:8.2pt;">
+  <li><b>Вертикаль:</b> площадка на вершине маленькая и высокая — край, падение, лестница не достаёт. Крылья дракона / толчки → «висишь над пропастью, бросок Атлетики схватиться».</li>
+  <li><b>Сорвать концентрацию Эрвана</b> = освободить дракона (и стравить её на мага). Подкинь игрокам намёк, если тупят.</li>
+  <li><b>Око дракона</b> (если светили в сц.5): дракона тянет к нему — можно выманить/отвлечь; добровольно отдать шар → она его заберёт и подобреет.</li>
+  <li><b>Стихия против Эрвана:</b> дыхание дракона по магу — эффектный поворот; напомни, что огня он не терпит.</li>
+  <li><b>Инкубатор:</b> свечи, жаровня-череп — можно опрокинуть, устроить пожар/дым как укрытие.</li>
+  <li><b>Дракон говорит:</b> она не тупой монстр — торгуется, угрожает, требует «верните яйцо ИЛИ имя вора». Дай PC шанс словами.</li>
+</ul>
+
+</body>
+</html>

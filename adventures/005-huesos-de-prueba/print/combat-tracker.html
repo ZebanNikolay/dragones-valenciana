@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Combat Tracker — Huesos de Prueba (Воронка)</title>
+<style>
+  @page { margin: 8mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9pt; line-height: 1.3; color: #222; }
+  h1 { font-size: 12pt; text-align: center; margin-bottom: 3px; border-bottom: 2px solid #333; padding-bottom: 2px; }
+  h2 { font-size: 10pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 6px; margin-bottom: 3px; }
+  h3 { font-size: 9pt; margin-top: 4px; margin-bottom: 2px; border-bottom: 1px solid #999; }
+  table { border-collapse: collapse; width: 100%; margin: 2px 0; font-size: 8pt; }
+  td, th { border: 1px solid #999; padding: 2px 4px; }
+  th { background: #eee; text-align: left; }
+  .init-table td { height: 22px; }
+  .init-table td:nth-child(1) { width: 20px; text-align: center; }
+  .hp-track { font-family: monospace; font-size: 8pt; letter-spacing: 1px; }
+  .block-ally { background: #e8f5e9; border: 1px solid #2e7d32; padding: 3px 6px; margin: 3px 0; font-size: 8pt; }
+  .block-vehicle { background: #fff8e1; border: 1px solid #f57f17; padding: 3px 6px; margin: 3px 0; font-size: 8pt; }
+  .block-status { background: #fff3e0; border: 1px solid #f5a623; padding: 3px 6px; font-size: 8pt; margin: 3px 0; }
+  .meta { color: #555; font-size: 7pt; }
+</style>
+</head>
+<body>
+
+<h1>Combat Tracker — Cañón del Embudo (Воронка)</h1>
+
+<h3>Инициатива (общая)</h3>
+<table class="init-table">
+  <tr><th>#</th><th>Кто</th><th>Иниц.</th><th>Заметки</th></tr>
+  <tr><td>1</td><td></td><td></td><td></td></tr>
+  <tr><td>2</td><td></td><td></td><td></td></tr>
+  <tr><td>3</td><td></td><td></td><td></td></tr>
+  <tr><td>4</td><td></td><td></td><td></td></tr>
+  <tr><td>5</td><td></td><td></td><td></td></tr>
+  <tr><td>6</td><td></td><td></td><td></td></tr>
+  <tr><td>7</td><td></td><td></td><td></td></tr>
+  <tr><td>8</td><td></td><td></td><td></td></tr>
+  <tr><td>9</td><td></td><td></td><td></td></tr>
+  <tr><td>10</td><td></td><td></td><td></td></tr>
+  <tr><td>11</td><td></td><td></td><td></td></tr>
+  <tr><td>12</td><td></td><td></td><td></td></tr>
+</table>
+
+<h2>Союзники-NPC</h2>
+<div class="block-ally">
+  <b>Pako</b> — AC 16, Spear +3 (1d6+1). CON +2. <span class="meta">Крепыш, рубаха-парень</span><br>
+  HP: <span class="hp-track">□□□□□ □□□□□ □</span> /11 &nbsp;&nbsp; Состояние: ___________
+</div>
+<div class="block-ally">
+  <b>Чуло</b> — AC 16, Spear +3 (1d6+1). CON +0. <span class="meta">Тощий, сонный, говорит с паузами</span><br>
+  HP: <span class="hp-track">□□□□□ □□□□□ □</span> /11 &nbsp;&nbsp; Состояние: ___________
+</div>
+
+<h2>Карраки</h2>
+<div class="block-vehicle">
+  <b>Мучитель</b> — AC 15, Speed 100ft. Порог отказа: 15.<br>
+  HP: <span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□</span> /60
+</div>
+<div class="block-vehicle">
+  <b>Комета 1</b> — AC 14, Speed 120ft. Порог отказа: 10.<br>
+  HP: <span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□</span> /30
+</div>
+<div class="block-vehicle">
+  <b>Комета 2</b> — AC 14, Speed 120ft. Порог отказа: 10.<br>
+  HP: <span class="hp-track">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□</span> /30
+</div>
+
+<h2>Статусы и препятствия</h2>
+<div class="block-status">
+  <b>Огневая полоса</b> — Р1: разлив. Р2: зажигание. ☐ Сработало<br>
+  Мучитель горит: ☐ &nbsp; Тушение: ☐ &nbsp; Урон/ход: карраку 1d6 fire, PC на палубе 1d4 fire
+</div>
+<div class="block-status">
+  <b>Яма-ловушка</b> — ☐ Сработала &nbsp; ☐ Мучитель в яме &nbsp; ☐ Вытащили (Athletics DC 16)<br>
+  DEX-сейв DC 14 при попадании. Провал → 2d6 bludgeoning + prone впереди карраки
+</div>
+<div class="block-status">
+  <b>Пружинистая сеть</b> — ☐ Натянута. Гасит таран. Не пробить обычной атакой.
+</div>
+
+<h2>Волна 1 — гоблины из песка</h2>
+<p class="meta">Goblin: AC 15, +4 to hit, 1d6+2 piercing (1 атака/ход). Прыжок на машину d20+2 vs DC 10. Прыжок на героя d20+2 vs DC 13 (+ 1d6+2)</p>
+<table>
+  <tr><th>Кто</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td>Прыгун 1</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Прыгун 2</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Прыгун 3</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Прыгун 4</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Прыгун 5</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Прыгун 6</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Разливщик 1</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Разливщик 2</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td>Разливщик 3</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td></td></tr>
+  <tr><td><b>Зажигатель</b></td><td><span class="hp-track">□□□□□ □□</span> /7</td><td>с факелом, на жиле</td></tr>
+</table>
+
+<h2>Волна 2 — стенка + сеть</h2>
+<p class="meta">Срабатывает после редения Волны 1</p>
+<table>
+  <tr><th>Кто</th><th>HP</th><th>Состояние</th></tr>
+  <tr><td><b>Орк</b> — AC 13, +5 to hit, 1d12+3 greataxe</td><td><span class="hp-track">□□□□□ □□□□□ □□□□□</span> /15</td><td>в центре, провоцирует</td></tr>
+  <tr><td>Копейщик 1 (гоблин)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td>щит + пика</td></tr>
+  <tr><td>Копейщик 2 (гоблин)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td>щит + пика</td></tr>
+  <tr><td>Сеточник 1 (гоблин)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td>держит сеть</td></tr>
+  <tr><td>Сеточник 2 (гоблин)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td>держит сеть</td></tr>
+  <tr><td>Сеточник 3 (гоблин)</td><td><span class="hp-track">□□□□□ □□</span> /7</td><td>держит сеть</td></tr>
+</table>
+
+</body>
+</html>

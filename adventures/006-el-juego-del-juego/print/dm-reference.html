@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>El Juego del Juego — DM-шпаргалка: игроки и NPC</title>
+<style>
+  @page { size: A4 portrait; margin: 10mm 11mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Noto Sans", "Segoe UI", Arial, sans-serif; color: #28251D; background: white; font-size: 9pt; line-height: 1.3; }
+
+  h1 { font-size: 15pt; margin: 0 0 1mm 0; }
+  h1 .em { font-size: 12pt; }
+  .sub { font-size: 8pt; color: #6E675C; margin: 0 0 4mm 0; }
+  h2 { font-size: 11pt; margin: 5mm 0 2mm 0; color: #A84B2F; border-bottom: 1pt solid #E4C9B8; padding-bottom: 1mm; }
+
+  /* Roster */
+  table.roster { width: 100%; border-collapse: collapse; margin-bottom: 3mm; }
+  table.roster th, table.roster td { border: .7pt solid #C9C3B7; padding: 2.2mm 2mm; text-align: left; vertical-align: middle; }
+  table.roster th { background: #EFEAE0; font-weight: 800; font-size: 8pt; }
+  table.roster .hero { font-weight: 800; }
+  table.roster .fill { background: repeating-linear-gradient(90deg,#fff,#fff 3mm,#F3F0EA 3mm,#F3F0EA 3.4mm); min-width: 42mm; }
+  .real { font-weight: 700; }
+  .handle { color: #6E675C; font-size: 7.5pt; }
+  .note-inline { color: #6E675C; font-size: 7.5pt; }
+
+  /* Hero quick-ref */
+  .heroes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+  .hero-box { border: .8pt solid #C9C3B7; border-radius: 1.6mm; padding: 2mm 2.4mm; background: #FBFBF9; }
+  .hero-box .hn { font-weight: 800; font-size: 8.5pt; }
+  .hero-box .hs { font-size: 7.3pt; color: #5F5B51; }
+  .hero-box ul { margin: 1.2mm 0 0 3.5mm; padding: 0; font-size: 7.3pt; line-height: 1.25; }
+
+  /* NPC cards */
+  .cards { display: block; }
+  .card { border: 1.4pt solid #28251D; border-radius: 2mm; padding: 2.6mm 3.2mm; margin-bottom: 2.6mm; background: #FBFBF9; break-inside: avoid; page-break-inside: avoid; }
+  .card header { display: flex; align-items: baseline; gap: 2mm; flex-wrap: wrap; border-bottom: .6pt solid #D4D1CA; padding-bottom: 1.4mm; margin-bottom: 1.6mm; }
+  .card .rank { font-size: 13pt; font-weight: 800; color: #A84B2F; }
+  .card .cname { font-size: 12.5pt; font-weight: 800; }
+  .card .tag { font-size: 7.3pt; color: #5F5B51; }
+  .card ul { margin: 0 0 0 4mm; padding: 0; line-height: 1.28; }
+  .card li { margin: 0 0 .8mm 0; }
+  .card b.lbl { color: #1B474D; }
+  .secret { border: .9pt solid #A84B2F; background: #FFF1E8; border-radius: 1.4mm; padding: 1.4mm 2mm; margin: 1.4mm 0; font-size: 8.4pt; }
+  .stat { border: .8pt solid #8A867D; background: #F2EFE8; border-radius: 1.4mm; padding: 1.4mm 2mm; margin-top: 1.4mm; font-size: 7.8pt; line-height: 1.28; }
+  .stat b { color: #28251D; }
+  .villain { border-color: #7A1F12; background: #FBF3F1; }
+  .villain .cname { color: #7A1F12; }
+  .ally { border-color: #1B474D; }
+  .ally .cname { color: #1B474D; }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<h1>🎩 El Juego del Juego <span class="em">— DM-шпаргалка</span></h1>
+<p class="sub">12.07.2026 · Potal · 4 игрока, пре-гены 5 ур. · настолка «Torres &amp; Tesoros» ведёт Пепито Маравилья</p>
+
+<h2>Игроки и герои</h2>
+<table class="roster">
+  <tr>
+    <th style="width:34mm">Игрок</th>
+    <th style="width:36mm">Герой</th>
+    <th>Имя персонажа <span class="note-inline">(вписать на игре)</span></th>
+  </tr>
+  <tr>
+    <td><span class="real">Евгений</span><br><span class="handle">@jekyna</span></td>
+    <td class="hero">Гном-воин <span class="note-inline">🛡 танк</span></td>
+    <td class="fill"></td>
+  </tr>
+  <tr>
+    <td><span class="real">Ева</span><br><span class="handle">@orrchy</span></td>
+    <td class="hero">Эльф-волшебник <span class="note-inline">✨ отыгрыш «вороватой»</span></td>
+    <td class="fill"></td>
+  </tr>
+  <tr>
+    <td><span class="real">Леонид</span><br><span class="handle">@leonid_smith</span></td>
+    <td class="hero">Орк-плут <span class="note-inline">🗡 скрытность/ловушки</span></td>
+    <td class="fill"></td>
+  </tr>
+  <tr>
+    <td><span class="real">Стэн</span><br><span class="handle">@MechanicalDragon</span></td>
+    <td class="hero">Дварф-жрец <span class="note-inline">✚ достался последним</span></td>
+    <td class="fill"></td>
+  </tr>
+</table>
+
+<div class="heroes">
+  <div class="hero-box">
+    <div class="hn">Гном-воин</div>
+    <div class="hs">AC 17 · HP 44 · Скор. 25</div>
+    <ul>
+      <li>Длинный меч +7, 1d8+4</li>
+      <li>2 атаки/ход; крит на 19–20</li>
+      <li>Второе дыхание, Всплеск действий</li>
+    </ul>
+  </div>
+  <div class="hero-box">
+    <div class="hn">Эльф-волшебник</div>
+    <div class="hs">AC 13 (16 mage armor) · HP 22</div>
+    <ul>
+      <li>DC 15, атака +7</li>
+      <li>Fireball, Magic Missile, Invisibility, Knock, Dispel Magic</li>
+      <li>Свитки в снаряжении</li>
+    </ul>
+  </div>
+  <div class="hero-box">
+    <div class="hn">Орк-плут</div>
+    <div class="hs">AC 15 · HP 28 · Скор. 30</div>
+    <ul>
+      <li>Кинжал/меч/арбалет +7</li>
+      <li>Скрытая атака +3d6</li>
+      <li>Обезвреживает ловушки, вскрывает замки авто</li>
+    </ul>
+  </div>
+  <div class="hero-box">
+    <div class="hn">Дварф-жрец</div>
+    <div class="hs">AC 16 · HP 30 · Скор. 25</div>
+    <ul>
+      <li>DC 15, боевой молот 1d8+2</li>
+      <li>Cure Wounds, Bless, Revivify, Hold Person</li>
+      <li>Изгнание нежити</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="page-break">Персонажи мастера (NPC) — по важности</h2>
+
+<div class="cards">
+
+  <div class="card villain">
+    <header>
+      <span class="rank">1</span>
+      <span class="cname">Эрван Душегуб</span>
+      <span class="tag">⚔️ главный злодей · человек, чародей, хаотично-злой · сцены 1 → 5 → 6</span>
+    </header>
+    <div class="secret"><b>ДВА ИМЕНИ.</b> Притворяется добродушным трактирщиком <b>«Весельчаком Доброромом»</b>. На деле — злой чародей Эрван Душегуб.</div>
+    <ul>
+      <li><b class="lbl">Тайна:</b> настоящий трактирщик Алакс заперт им в подземелье. Заказал отряду «Напролом» украсть яйцо у драконихи Пеплорёв → вместо платы убил их магией, скормил слизням.</li>
+      <li><b class="lbl">Цель:</b> прячет яйцо в башне, ждёт вылупления вирмлинга, чтобы вырастить злым.</li>
+      <li><b class="lbl">Сцена 1:</b> зазывает бесплатными острыми крылышками, «купил трактир, идёт ремонт». Хочет одного — чтобы гости ушли, скажет что угодно.</li>
+      <li><b class="lbl">Сцена 5:</b> застают в мастерской на вершине башни. При шуме/угрозе — <i>dimension door</i> и сбегает в сцену 6.</li>
+      <li><b class="lbl">Сцена 6:</b> финальный босс одновременно с драконихой. Труслив — умные игроки стравят его с Пеплорёв.</li>
+      <li><b class="lbl">Яйцо:</b> скорее умрёт, чем отдаст.</li>
+    </ul>
+    <div class="stat"><b>Опасность 5 · AC 12 (15 mage armor) · HP 84 · Скор. 30.</b> Мультиатака: 3× Магический заряд +6, 3d6+3 силовой (120 фт). <b>Кислотный дождь</b> (перезар.): цилиндр R10/H20 фт, DEX DC14, 4d10 кислота (½ при успехе). Заклы DC14: <i>mage hand, light</i>; 2/день <i>dimension door</i>; 1/день <i>mage armor, levitate, disguise self</i>.</div>
+  </div>
+
+  <div class="card villain">
+    <header>
+      <span class="rank">2</span>
+      <span class="cname">Пеплорёв (Cinderhowl)</span>
+      <span class="tag">🐉 взрослый красный дракон · мать украденного яйца · сцена 6</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Кто:</b> взрослая красная дракониха, у которой «Напролом» по заказу Эрвана украли яйцо. Говорит на Общем и Драконьем.</li>
+      <li><b class="lbl">Появление:</b> прилетает на башню в финале, обвиняет героев в краже, грозит сжечь.</li>
+      <li><b class="lbl">Чувства:</b> обострены — яйцо от неё не спрятать.</li>
+      <li><b class="lbl">Развязка:</b> перенаправить ярость на Эрвана — проверка ХАР (Обман/Убеждение) <b>DC 20</b>.</li>
+      <li><b class="lbl">Если вернуть яйцо,</b> но она на грани поражения — заберёт яйцо и улетит, пообещав преследовать героев в кошмарах.</li>
+    </ul>
+    <div class="stat"><b>Враждебный adult red dragon</b> (блок из Бестиария). Двойной босс вместе с Эрваном — бьются одновременно.</div>
+  </div>
+
+  <div class="card ally">
+    <header>
+      <span class="rank">3</span>
+      <span class="cname">Алакс Нефритовая Чешуя</span>
+      <span class="tag">🦎 драконорождённый, нейтрально-добрый · НАСТОЯЩИЙ трактирщик · сцена 3 → финал</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Кто:</b> светло-зелёная чешуя, законный владелец трактира «На виду». Эрван запер его в тюремной камере подземелья.</li>
+      <li><b class="lbl">Освобождение (сц.3):</b> дверь камеры — <i>knock</i> / выбить (воин, дварф — авто) / вскрыть (плут — авто) / большой ключ из сцены 5.</li>
+      <li><b class="lbl">Ведёт себя:</b> благодарен, избегает насилия. Обещает угостить крылышками, когда Эрван перестанет угрожать.</li>
+      <li><b class="lbl">Хочет:</b> вернуть питомца <b>Кусю</b> (сцена 4) и серебряную сковороду (в мастерской, сц.5).</li>
+      <li><b class="lbl">Даёт инфу:</b> весь заговор Эрвана, где спрятано яйцо. Может сопровождать группу, если попросят.</li>
+    </ul>
+    <div class="stat"><b>Опасность 2 · AC 10 · HP 58 · Скор. 30.</b> Мультиатака: 2× Огненный удар +5, 2d6+3 огонь (60 фт). <b>Дыхание</b> (перезар.): конус 15 фт, DEX DC12, 4d6 огонь (½). Заклы WIS DC13: <i>druidcraft, resistance</i>; 1/день <i>cure wounds, faerie fire, purify food and drink</i>. Иммунитет к яду.</div>
+  </div>
+
+  <div class="card ally">
+    <header>
+      <span class="rank">4</span>
+      <span class="cname">Куся</span>
+      <span class="tag">👁 питомец Алакса · ускользающий зверь → бехолдер · сцена 4 (подвал)</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Тайна:</b> это ускользающий зверь [displacer beast], которого Эрван превратил в <b>бехолдера</b> мощным свитком.</li>
+      <li><b class="lbl">Подсказка:</b> «бехолдер» идёт навстречу драконорождённому и лижет ему лицо — явный сигнал, что он не тот, кем кажется.</li>
+      <li><b class="lbl">Успокоить:</b> дать молока или назвать по имени «Куся» → отношение дружелюбное.</li>
+      <li><b class="lbl">Вернуть облик:</b> отразить конус антимагии посеребрённой сковородой, либо <i>dispel magic</i>. Тогда воссоединяется с Алаксом.</li>
+      <li><b class="lbl">В облике бехолдера:</b> центральный глаз = конус антимагии, 10 глазков на стеблях. Не нападает первым, только для самозащиты.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <header>
+      <span class="rank">5</span>
+      <span class="cname">Пробуждённое дерево</span>
+      <span class="tag">🌳 говорящее дерево [awakened tree] · сцена 2 (луг)</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Кто:</b> дерево, пробуждённое друидом много лет назад. Медлительное, вдумчивое, добродушное.</li>
+      <li><b class="lbl">Болтает:</b> о погоде, временах года, белках и птицах. Не рад дятлам и «чародею в башне».</li>
+      <li><b class="lbl">Тайна (если попросить):</b> под ним камень, скрывающий дверь в подземелье (сцена 3). Дверь заперта <i>arcane lock</i>.</li>
+      <li><b class="lbl">Открыть дверь:</b> золотым ключом (у пауков/совомеда на лугу), <i>dispel magic</i> или <i>knock</i> (шумно и долго).</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <header>
+      <span class="rank">6</span>
+      <span class="cname">Микониды (×2)</span>
+      <span class="tag">🍄 грибной народ [myconid] · под мостом на лугу · сцена 2</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Кто:</b> миролюбивые телепаты. Сражаются только для самозащиты.</li>
+      <li><b class="lbl">Выдают инфу (если расспросить):</b> «Весельчак» = замаскированный чародей Эрван; настоящий трактирщик Алакс заперт в подземелье; Эрван приказал закопать магические предметы.</li>
+      <li><b class="lbl">Если дружелюбны — подарят:</b> зелье лечения, зелье сопротивления (кислота), том чистых мыслей.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <header>
+      <span class="rank">7</span>
+      <span class="cname">Отряд «Напролом» + череп Эстуса</span>
+      <span class="tag">💀 4 погибших авантюриста · лор через speak with dead · сцены 3–4</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Кто:</b> плут Гракл, маг Килдар, воин Колин, жрец Эстус. Эрван нанял их украсть яйцо, потом убил магией вместо платы.</li>
+      <li><b class="lbl">Что сделали:</b> украли яйцо из логова Пеплорёв, перебив кобольдов-стражей.</li>
+      <li><b class="lbl">Останки:</b> 3 чёрных слизня [black pudding] в подземелье (сц.3); 3 скелета в подвале (сц.4).</li>
+      <li><b class="lbl">Лут скелетов:</b> кираса +1 + меч остроты (воин); кинжал яда + кольцо невидимости (плут); мантия сияющих цветов (маг).</li>
+      <li><b class="lbl">Череп Эстуса:</b> плавает в желатиновом кубе (сц.3). <i>speak with dead</i> → до 5 вопросов, знает всю предысторию заговора.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <header>
+      <span class="rank">8</span>
+      <span class="cname">Совомед</span>
+      <span class="tag">🦉 фоновый хищник [owlbear] · сцена 2 (луг)</span>
+    </header>
+    <ul>
+      <li><b class="lbl">Кто:</b> охотится на 3 гигантских пауков в высокой траве. Нейтрален.</li>
+      <li><b class="lbl">Нападает,</b> только если атаковать/угрожать ему или паукам. Наевшись пауков — уходит спать.</li>
+      <li><b class="lbl">В траве у пауков:</b> 150 зм + <b>золотой ключ</b> (открывает дверь дерева в подземелье, сц.3).</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

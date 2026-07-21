@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Враги и NPC — Huesos de Prueba</title>
+<style>
+  @page { margin: 8mm 10mm; size: A4 portrait; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5pt; line-height: 1.25; color: #222; }
+  .block { border: 2px solid #333; padding: 5px 8px; margin-bottom: 4px; }
+  .block-enemy { border-color: #c62828; }
+  .block-ally { border-color: #2e7d32; }
+  .name { font-size: 12pt; font-weight: bold; display: inline; }
+  .meta { font-size: 8pt; color: #666; display: inline; margin-left: 8px; }
+  .top-row { display: flex; gap: 6px; margin: 2px 0; align-items: center; }
+  .stat-box { border: 1px solid #999; padding: 2px 6px; text-align: center; font-size: 9pt; }
+  .stat-box .label { font-size: 7pt; color: #666; font-weight: bold; }
+  .stat-box .val { font-size: 12pt; font-weight: bold; }
+  .stats-row { display: flex; gap: 0; margin: 3px 0; }
+  .stats-row .cell { flex: 1; text-align: center; border: 1px solid #bbb; padding: 1px 2px; }
+  .stats-row .cell .l { font-size: 7pt; font-weight: bold; color: #666; }
+  .stats-row .cell .v { font-size: 9pt; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; font-size: 8pt; margin: 2px 0; }
+  td, th { border: 1px solid #ccc; padding: 1px 4px; }
+  th { background: #eee; text-align: left; }
+  ul { margin: 0 0 0 12px; font-size: 8pt; }
+  li { margin: 0; }
+  .key { padding: 1px 4px; font-size: 8pt; margin-top: 2px; }
+  .key-enemy { background: #ffebee; border: 1px solid #c62828; }
+  .key-ally { background: #e8f5e9; border: 1px solid #2e7d32; }
+  h2 { font-size: 10pt; background: #333; color: #fff; padding: 2px 8px; margin-top: 6px; margin-bottom: 3px; }
+</style>
+</head>
+<body>
+
+<h2>СОЮЗНИКИ-NPC</h2>
+
+<!-- PAKO -->
+<div class="block block-ally">
+  <div><span class="name">Pako</span><span class="meta">Пилот-NPC, бывший моряк, стражник форта. Крепыш, рубаха-парень, «эге́й»</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">16</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">11</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+1</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">12(+1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Spear</td><td>+3</td><td>1d6+1 колющ.</td><td>20/60, можно двуручно (1d8+1)</td></tr>
+  </table>
+  <div class="key key-ally">Восприятие +2. Бывший моряк — паруса знает. CON-сейв +2 (крепыш, морская закалка)</div>
+</div>
+
+<!-- ЧУЛО -->
+<div class="block block-ally">
+  <div><span class="name">Чуло</span><span class="meta">Пилот-NPC, бывший моряк, стражник из 004. Тощий, сонный, говорит с паузами</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">16</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">11</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+1</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">13(+1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">9(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Оружие</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Spear</td><td>+3</td><td>1d6+1 колющ.</td><td>20/60, можно двуручно (1d8+1)</td></tr>
+  </table>
+  <div class="key key-ally">Восприятие +2. Бывший моряк — паруса знает. CON-сейв +0 (тощий, ленивый — чаще фейлит на дурман)</div>
+</div>
+
+<h2>ВРАГИ</h2>
+
+<!-- ГОБЛИН -->
+<div class="block block-enemy">
+  <div><span class="name">Гоблин Aljibe</span><span class="meta">Small Humanoid, NE — клан El Aljibe, культ воды</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">7</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+2</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">14(+2)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">10(+0)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">8(-1)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">8(-1)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Атака</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Крюк (рукой)</td><td>+4</td><td>1d6+2 колющ.</td><td>1 атака/ход. Второй крюк — только для зацепа за борт</td></tr>
+    <tr><td>Прыжок на машину</td><td>d20+2 vs DC 10</td><td>—</td><td>Успех — на палубе. Провал — кувыркается в пыли</td></tr>
+    <tr><td>Прыжок на героя</td><td>d20+2 vs DC 13</td><td>1d6+2 колющ.</td><td>Успех — лендинг + удар. Провал — мимо</td></tr>
+  </table>
+  <div class="key key-enemy">Stealth +6, Darkvision 60ft. <b>Nimble Escape:</b> Disengage или Hide бонусным действием. Кричит «¡El Aljibe!», «¡Bebe o arde!»</div>
+</div>
+
+<!-- ОРК -->
+<div class="block block-enemy">
+  <div><span class="name">Орк</span><span class="meta">Medium Humanoid, CE — провокатор у баррикады. Большой щит, greataxe</span></div>
+  <div class="top-row">
+    <div class="stat-box"><div class="label">AC</div><div class="val">13</div></div>
+    <div class="stat-box"><div class="label">HP</div><div class="val">15</div></div>
+    <div class="stat-box"><div class="label">Скор.</div><div class="val">30</div></div>
+    <div class="stat-box"><div class="label">Иниц.</div><div class="val">+1</div></div>
+    <div style="flex:1">
+      <div class="stats-row">
+        <div class="cell"><div class="l">СИЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ЛОВ</div><div class="v">12(+1)</div></div>
+        <div class="cell"><div class="l">ТЕЛ</div><div class="v">16(+3)</div></div>
+        <div class="cell"><div class="l">ИНТ</div><div class="v">7(-2)</div></div>
+        <div class="cell"><div class="l">МДР</div><div class="v">11(+0)</div></div>
+        <div class="cell"><div class="l">ХАР</div><div class="v">10(+0)</div></div>
+      </div>
+    </div>
+  </div>
+  <table>
+    <tr><th>Атака</th><th>Попад.</th><th>Урон</th><th>Примечание</th></tr>
+    <tr><td>Greataxe</td><td>+5</td><td>1d12+3 рубящ.</td><td>1 атака/ход</td></tr>
+    <tr><td>Javelin</td><td>+5</td><td>1d6+3 колющ.</td><td>30/120 (если бросает)</td></tr>
+  </table>
+  <div class="key key-enemy">Darkvision 60ft. <b>Aggressive:</b> бонусным действием движется до своей скорости к враждебному. Провоцирует таран — за ним яма-ловушка</div>
+</div>
+
+</body>
+</html>

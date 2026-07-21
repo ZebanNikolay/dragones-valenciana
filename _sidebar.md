@@ -38,7 +38,7 @@
   - [Correos de Valencia](organizations/correos-de-valencia.md)
 
 - **Мои персонажи**
-  - [Друид-гном (без имени)](my-characters/druid-gnome.md)
+  - [Друид-гном (без имени)](dm-characters/druid-gnome.md)
 
 - **Игроки**
   - [Ростер](players/roster.md)
